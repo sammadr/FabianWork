@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+@import url(../css);
+@import url(../css/);
+@import url(../css);
+@import url(../css);
+@import url(../css);
+
+
+:root{
+    --text: #000000;
+    --azul: #0511F2;
+    --azulClaro: #57D6F2;
+    --azulMedio: #0583F2;
+    --azulTenue: #020659;
+    --azulMarino: #010326;
+    --azulOscuro: #010440;
+
+    /* --poppins: "Poppins";
+    --concertOne: "Concert One"; */
+}
+body{
+    color: var(--text);
+    font-family: var(--poppins);
+}
+
+
+
+/* Estilos para mobiles en orientación horizontal */
+
+
+/* Estilos para tablets en orientación horizontal */
+@media (min-height: 768px) and (max-height: 1280px) {
+
+}
+
+/* Estilos para desktop en orientación horizontal */
+@media (min-width: 1025px){
+    
+}
