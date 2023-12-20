@@ -2,16 +2,7 @@ const sql = require('mssql/msnodesqlv8');
 
 //Confirguramos el entorno para la conexion de la base de datos
 const config ={
-
-    server: '.',
-    database: "bd1",
-    //driver: "msnodesqlv8",
-    user: "arlenyr",
-    password: "jirafa1945$",
-    port: "1433",
-    options: {
-        trustedConnection: true
-    }
+///
  
 }
 

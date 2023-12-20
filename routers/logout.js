@@ -43,4 +43,4 @@ routerLogout.post('/', async (req, res) => {
 
 
 
-module.exports = routerLogout;// Exportar el objeto router PARA USAR
+module.exports = routerLogout;// Exportar el objeto router PARA USARLO
