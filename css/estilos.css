@@ -1,27 +1,30 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+/* Importación de fuentes desde Google Fonts y otros archivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url(../css/login.css);
 @import url(../css/modal.css);
-@import url(../css);
-@import url(../css);
-@import url(../css);
+@import url(../css); /* ¡Asegúrate de proporcionar un archivo específico aquí! */
+@import url(../css); /* ¡Asegúrate de proporcionar un archivo específico aquí! */
+@import url(../css); /* ¡Asegúrate de proporcionar un archivo específico aquí! */
 
-
-:root{
-    --text: #000000;
-    --azul: #0511F2;
+/* Definición de variables globales */
+:root {
+    --text: #333;
+    --input: #eee;
+    --blanco: #fff;
+    --rojo: #FB503B;
+    --verde: #4DBA87;
     --azulClaro: #57D6F2;
     --azulMedio: #0583F2;
     --azulTenue: #020659;
     --azulMarino: #010326;
     --azulOscuro: #010440;
-
-    /* --poppins: "Poppins";
-    --concertOne: "Concert One"; */
 }
-body{
-    font-family: var(--poppins);
+
+/* Estilos generales del cuerpo del documento */
+body {
     background: var(--azulMarino);
 }
+
 
 
 

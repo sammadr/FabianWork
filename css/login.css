@@ -1,0 +1,137 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para la sección de inicio de sesión */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos para el título del formulario */
+.form__titulo {
+    color: var(--azulTunue);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    background-color: var(--blanco);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+/* Estilos para los enlaces dentro del contenedor */
+.contenedor a {
+    color: var(--text);
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.contenedor button {
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario dentro del contenedor */
+.contenedor form {
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+/* Estilos para los campos de entrada dentro del formulario */
+.contenedor input {
+    background-color: var(--input);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Estilos para el contenedor del formulario */
+.form__contenedor {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+/* Estilos específicos para el formulario de inicio de sesión */
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+/* Estilos para el contenedor del interruptor de visualización */
+.toggle__contenedor {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100px 0 0 100px;
+    z-index: 1000;
+}
+
+/* Estilos para el interruptor de visualización */
+.toggle {
+    height: 100%;
+    background: var(--azulMedio);
+    color: var(--blanco);
+    position: relative;
+    right: 0%;
+    height: 100%;
+    width: 200%;
+}
+
+/* Estilos para la imagen del interruptor de visualización */
+.login__img {
+    width: 25vw;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+/* Estilos para el panel del interruptor de visualización */
+.toggle__panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+}

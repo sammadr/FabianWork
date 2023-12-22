@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio de sección</title>
-</head>
-<body>
     
+    <!-- Enlaces a las hojas de estilo -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Título de la página -->
+    <title>Login</title>
+</head>
+
+<body class="login">
+    <!-- Contenedor principal -->
+    <section class="form__login">
+        <div class="contenedor" id="contenedor">
+            <!-- Contenedor del formulario de inicio de sesión -->
+            <div class="form__contenedor sign-in">
+                <form>
+                    <!-- Título del formulario -->
+                    <h1 class="form__titulo">¡Bienvenido!</h1>
+                    
+                    <!-- Campos de entrada para correo electrónico y contraseña -->
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    
+                    <!-- Enlace para recuperar contraseña -->
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    
+                    <!-- Botón para iniciar sesión -->
+                    <button>Iniciar sesión</button>
+                </form>
+            </div>
+            
+            <!-- Contenedor del interruptor de visualización -->
+            <div class="toggle__contenedor">
+                <div class="toggle">
+                    <div class="toggle__panel">
+                        <!-- Imagen decorativa -->
+                        <img class="login__img" src="./assets/laravel.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
