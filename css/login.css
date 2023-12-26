@@ -1,10 +1,12 @@
 /* Estilos generales */
+/* Estilos generales para resetear márgenes y rellenar cajas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos para la sección de inicio de sesión */
 .login {
     display: flex;
     align-items: center;
@@ -14,6 +16,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos para el título del formulario */
 .form__titulo {
     color: var(--azulTunue);
     font-weight: bold;
@@ -21,6 +24,7 @@
     margin-bottom: 20px;
 }
 
+/* Estilos para el contenedor principal del formulario */
 .contenedor {
     background-color: var(--blanco);
     border-radius: 30px;
@@ -33,6 +37,7 @@
     flex-direction: column;
 }
 
+/* Estilos para los enlaces dentro del contenedor */
 .contenedor a {
     color: var(--text);
     font-size: 13px;
@@ -44,6 +49,7 @@ a:hover{
     color: var(--azulMedio);
 }
 
+/* Estilos para el botón de inicio de sesión */
 .contenedor button {
     background-color: var(--azulMedio);
     color: var(--blanco);
@@ -58,6 +64,11 @@ a:hover{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: var(--azulTenue);
+}
+
+/* Estilos para el formulario dentro del contenedor */
 .contenedor form {
     background-color: var(--blanco);
     display: flex;
@@ -68,6 +79,7 @@ a:hover{
     height: 100%;
 }
 
+/* Estilos para los campos de entrada del formulario */
 .contenedor input {
     background-color: var(--input);
     border: none;
@@ -78,16 +90,19 @@ a:hover{
     width: 100%;
 }
 
+/* Estilos para el contenedor del formulario */
 .form__contenedor {
     position: relative;
     width: 100%;
 }
 
+/* Estilos específicos para la sección de inicio de sesión */
 .sign-in {
     order: 2;
     width: 100%;
 }
 
+/* Estilos para el contenedor de alternancia en dispositivos móviles */
 .toggle__contenedor {
     order: 1;
     position: relative;
@@ -97,10 +112,12 @@ a:hover{
     border-radius: 30px;
 }
 
+/* Estilos para el contenedor de alternancia en dispositivos de escritorio */
 .toggle__contenedor--desktop{
     display: none;
 }
 
+/* Estilos para el panel de alternancia */
 .toggle {
     background: var(--azulMedio);
     color: var(--blanco);
@@ -109,7 +126,7 @@ a:hover{
     height: 100%;
 }
 
-
+/* Estilos para el panel de alternancia en dispositivos móviles */
 .toggle__panel {
     position: relative;
     width: 100%;
@@ -123,34 +140,40 @@ a:hover{
     text-align: center;
 }
 
+/* Estilos para la imagen en el panel de alternancia */
 .login__img {
     width: 50%;
     padding-left: 0;
     padding: 10px;
 }
 
-/* Media queries para dispositivos más grandes */
+/* Media queries para dispositivos de escritorio */
 @media screen and (min-width: 769px) {
+    /* Ajustes de diseño para dispositivos de escritorio */
     .contenedor {
         max-width: 768px;
         flex-direction: row;
         border-radius: 30px;
     }
 
+    /* Ocultar el contenedor de alternancia en dispositivos de escritorio */
     .toggle__contenedor {
         display: none;
         max-width: 768px;
     }
 
+    /* Mostrar el contenedor de alternancia en dispositivos de escritorio */
     .toggle__contenedor--desktop{
         display:block;
         order: 2;
     }
 
+    /* Ajustes de diseño para la imagen en dispositivos de escritorio */
     .login__img {
         width: 80%;
         padding-left: 0;
         padding-top: 100px;
     }
 }
+
 

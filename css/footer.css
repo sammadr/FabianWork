@@ -1,33 +1,41 @@
+/* Estilos para el pie de página */
 footer {
     padding-top: 6.8rem;
 }
 
+/* Estilos para el contenido del pie de página */
 .footer {
     background-color: var(--azulMedio);
     color: var(--blanco);
+    font-weight: bold;
     text-align: center;
     padding: 5vw 55vw;
     margin-top: 1rem;
     white-space: nowrap;
 }
 
-/* Media queries para dispositivos más grandes */
+/* Media queries para dispositivos de escritorio */
 @media screen and (min-width: 769px) {
+    /* Ajustes de diseño para dispositivos de escritorio */
     footer {
         padding-top: 1rem;
     }
     
+    /* Ajustes de diseño para el contenido del pie de página en dispositivos de escritorio */
     .footer{
         padding: 2vw 86.6vh; 
         margin-top: 1rem;
     }
 }
 
+/* Media queries para pantallas más grandes */
 @media screen and (min-width: 1280px) {
+    /* Ajustes de diseño para pantallas más grandes */
     footer {
         padding-top: 3.9rem;
     }
 
+    /* Ajustes de diseño para el contenido del pie de página en pantallas más grandes */
     .footer {
         padding: 2vw 86.9vh; 
     }
