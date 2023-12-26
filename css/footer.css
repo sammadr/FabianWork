@@ -1,0 +1,34 @@
+footer {
+    padding-top: 6.8rem;
+}
+
+.footer {
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    text-align: center;
+    padding: 5vw 55vw;
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+
+/* Media queries para dispositivos más grandes */
+@media screen and (min-width: 769px) {
+    footer {
+        padding-top: 1rem;
+    }
+    
+    .footer{
+        padding: 2vw 86.6vh; 
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    footer {
+        padding-top: 3.9rem;
+    }
+
+    .footer {
+        padding: 2vw 86.9vh; 
+    }
+}
