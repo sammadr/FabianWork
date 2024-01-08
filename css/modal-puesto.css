@@ -1,0 +1,220 @@
+/* Estilos para el contenedor del modal de puesto */
+.contenedor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.contenedor-modal.mostrar-puesto {
+    background-color: rgb(0, 0, 0,0.5);
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Estilos para el botón de puesto */
+.btn-puesto {
+    background-color: var(--azulTenue );
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.5s;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 30px  0px;
+    cursor: pointer;
+}
+
+.btn-puesto:hover {
+    background-color: var(--azulClaro);
+    color: var(--azulTenue);
+}
+
+/* Estilos para el botón de cerrar el modal de puesto */
+.cerrar-puestoModal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    z-index: 2; 
+}
+
+.cerrar-puestoModal i {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--azulTenue);
+    transition: color 0.3s ease; 
+}
+
+.cerrar-puestoModal i:hover {
+    color: var(--rojo);
+}
+
+/* Estilos para la sección de título del puesto */
+.puesto__titulo {
+    color: var(--azulTenue);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal del puesto */
+.puesto__contenedor {
+    background-color: var(--blanco);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el formulario del puesto */
+.puesto__contenedor form {
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100%;
+}
+
+/* Estilos para el contenedor del formulario del puesto */
+.form-puesto__contenedor {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para el contenedor de registro en dispositivos de escritorio */
+.sign-up {
+    order: 2;
+    width: 100%;
+}
+
+
+/* Estilos para los campos de entrada del puesto */
+.puesto__contenedor input {
+    background-color: var(--input);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+
+/* Estilos para el contenedor del panel de alternancia en dispositivos móviles */
+.toggle-puesto__contenedor {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px 30px 0px 0px;
+}
+
+/* Estilos para el panel de alternancia del puesto */
+.toggle-puesto {
+    background: var(--azulClaro);
+    color: var(--blanco);
+    position: relative;
+    width: 100%;
+    height: 15vh;
+}
+
+/* Estilos para la imagen del puesto */
+.puesto__img {
+    width: 50%;
+    padding-left: 0;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+/* Estilos para el panel del puesto */
+.toggle-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Estilos para el título del panel del puesto */
+.toggle-titulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+/* Estilos para pantallas con un ancho mínimo de 769px */
+@media screen and (min-width: 769px) {
+    /* Ajustes para el contenedor de puesto en pantallas más grandes */
+    .puesto__contenedor {
+        max-width: 500px; 
+        border-radius: 30px; 
+    }
+
+    /* Ajustes para la imagen dentro del contenedor de puesto en pantallas más grandes */
+    .puesto__img {
+        width: 50%; 
+        padding-left: 0; 
+        padding-top: 10px; 
+    }
+
+    /* Ajustes para el título del toggle (alternancia) en pantallas más grandes */
+    .toggle-titulo {
+        font-size: 30px;
+        font-weight: bold; 
+        text-transform: uppercase; 
+        text-align: center; 
+        margin: 0 auto; 
+        position: absolute; 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, 150%); 
+    }
+
+    /* Ajustes para el fondo del toggle en pantallas más grandes */
+    .toggle-puesto {
+        background: var(--azulTenue); 
+    }
+
+    /* Ajustes para el icono de cierre del modal de puesto en pantallas más grandes */
+    .cerrar-puestoModal i {
+        color: var(--azulClaro); 
+    }
+}

@@ -1,0 +1,269 @@
+/* Estilos para el contenedor del modal de registro */
+.contenedor-registroModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.contenedor-registroModal.mostrar-registro {
+    background-color: rgb(0, 0, 0, 0.5); 
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Estilos para el botón de cerrar modal */
+.cerrar-modal {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    z-index: 2; 
+}
+
+.cerrar-modal i {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--azulTenue);
+    transition: color 0.3s ease; 
+}
+
+.cerrar-modal i:hover {
+    color: var(--rojo);
+}
+
+/* Estilos para el título del formulario de registro */
+.registro__titulo {
+    color: #020659;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Estilos para el contenedor del formulario de registro */
+.registro__contenedor {
+    background-color: var(--blanco);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el formulario de registro */
+.registro__contenedor form {
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100%;
+}
+
+/* Estilos para los campos de entrada del formulario de registro */
+.registro__contenedor input {
+    background-color: var(--input);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/* Estilos para los campos de selección del formulario de registro */
+.registro__contenedor select {
+    background-color: var(--input);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/* Estilos para hover y focus en campos de selección */
+.registro__contenedor select:hover,
+.registro__contenedor select:focus {
+    background-color: #ddd;
+}
+
+/* Estilos para las opciones de los campos de selección */
+.registro__contenedor select option {
+    background-color: var(--blanco);
+    color: #333;
+}
+
+/* Estilos para el contenedor del formulario de registro en dispositivos de escritorio */
+.form-registro__contenedor {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para el panel de alternancia en dispositivos móviles */
+.toggle-puesto__contenedor {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* Estilos para el panel de alternancia en dispositivos de escritorio */
+.toggle-registro__contenedor--desktop{
+    display: none;
+}
+
+/* Estilos para el contenido del panel de alternancia */
+.toggle__registro-contenido {
+    background: var(--azulClaro);
+    color: var(--blanco);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el panel del formulario de registro */
+.toggle-registro__panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Estilos para la imagen en el formulario de registro */
+.registro__img {
+    width: 50%;
+    padding-left: 0;
+    padding: 10px;
+}
+
+/* Estilos para el botón de registro */
+.btn-registro {
+    background-color: var(--azulTenue );
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.5s;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 30px  0px;
+    cursor: pointer;
+}
+
+.btn-registro:hover {
+    background-color: var(--azulClaro);
+    color: var(--azulTenue);
+}
+
+
+
+@media screen and (min-width: 769px) {
+    /* Ajustes de diseño para dispositivos de escritorio */
+    .registro__contenedor {
+        max-width: 755px;
+        max-height: 550PX;
+        flex-direction: row;
+        border-radius: 30px;
+    }
+
+    /* Ocultar el contenedor de alternancia en dispositivos de mobile */
+    .toggle-registro__contenedor {
+        display: none;
+    }
+
+    /* Mostrar el contenedor de alternancia en dispositivos de escritorio */
+    .toggle-registro__contenedor--desktop{
+        display:block;
+        order: 1;
+    }
+
+    .toggle__registro-contenido{
+        background-color: var(--azulMedio);
+        height: 100%;
+        color: var(--blanco);
+        position: relative;
+        left: 0;
+        width: 90%;
+        border-radius: 0px 60px 60px 0px;
+    }
+    
+    /* Estilos adicionales para el formulario de registro en dispositivos de escritorio */
+    .toggle-titulo {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+    }
+
+    /* Ajustes de diseño para la imagen en dispositivos de escritorio */
+    .registro__img {
+        width: 80%;
+        padding-top: 180px;
+    }
+
+    /* Estilos adicionales para el título del formulario de registro en dispositivos de escritorio */
+    .registro__titulo{
+        font-size: 22px;
+        white-space: nowrap;
+        padding-top: 15px;
+        text-transform: uppercase;
+        margin-right: 50px;
+    }
+
+     /* Ajustes de diseño para los campos de entrada en dispositivos de escritorio */
+    .registro__contenedor input {
+        width: 90%;
+    }
+    
+    /* Ajustes de diseño para los selectores en dispositivos de escritorio */
+    .registro__contenedor select {
+        width: 90%;
+    }
+
+    /* Ajustes de diseño para el icono de cierre del modal en dispositivos de escritorio */
+    .cerrar-modal {
+        position: absolute;
+    }
+
+    /* Ajustes de diseño para el botón de registro en dispositivos de escritorio */
+    .btn-registro {
+        margin: 20px 0;
+    }
+}
