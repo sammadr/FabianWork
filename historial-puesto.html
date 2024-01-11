@@ -15,7 +15,7 @@
     <!-- Título de la página -->
     <title>Historial puesto</title>
 </head>
-<body>
+<body id="historialPuesto-body">
     <!-- Menu de navegación de la página -->
     <header class="cabecera">
         <div class="cabecera__contenedor">
@@ -54,7 +54,7 @@
                     </li>
                     <li class="cabecera__menu-item">
                         <a class="cabecera__menu-link" href="./notificaciones.html">
-                            <i class="fa-solid fa-comments" style="color: #57d6f2;"></i>
+                            <i class="" style="color: #57d6f2;"></i>
                             Notificaciones
                         </a>
                     </li>
@@ -91,7 +91,7 @@
     <!-- Contenido principal de la página -->
     <main>
         <!-- Sección de la página principal -->
-        <section class="homePage">
+        <section class="homePage-puesto">
             <div class="contenedor-perfil">
                 <!-- Perfil del usuario -->
                 <div class="perfil">
@@ -221,7 +221,7 @@
                             <!-- Contenedor para el panel de alternancia en dispositivos de escritorio -->
                             <div class="toggle-registro__contenedor--desktop">
                                 <div class="toggle__registro-contenido">
-                                    <div class "toggle-registro__panel">
+                                    <div class="toggle-registro__panel">
                                         <img class="registro__img" src="assets/registros.svg">
                                     </div>
                                 </div>
@@ -243,16 +243,179 @@
                     </button>       
                 </div>
 
-                <div class="contenedor-banner">
-                    <!-- Banner de bienvenida -->
-                    <div class="homePage__banner">
-                        <!-- <img class="homePage__banner-img" src="./assets/banner.svg" alt="">
-                        <div class="">
-                            <h1 class="homePage__banner-titulo">Bienvenido, Fabian</h1>
-                            <h3 class="homePage__banner-subtitulo">¡Comprobemos que hay para el día de hoy!</h3>
-                        </div> -->
+                <!-- Contenedor principal de la sección de historial de puesto -->
+<div class="homePage__historialPuesto">
+    <div class="contenedor-historialPuesto">
+        <!-- Tarjeta del historial de puesto -->
+        <div class="historialPuesto__card">
+            <!-- Cabecera de la tarjeta -->
+            <div class="historialPuesto__card-cabecera">
+                <h1 class="historialPuesto__card-titulo">Historial Puesto</h1>
+            </div>
+
+            <!-- Cuerpo de la tarjeta -->
+            <div class="historialPuesto__card-cuerpo">
+                <div class="tabla-responsive">
+                    <!-- Tabla del historial de puesto -->
+                    <table class="historialPuesto__tabla">
+                        <thead>
+                            <tr class="historialPuesto__tabla--columna">
+                                <th scope="col">No.</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Puesto</th>
+                                <th scope="col">Historial</th>
+                                <th scope="col">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>1</td>
+                                <td>Sarah Somers</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>2</td>
+                                <td>Diego Torres</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>3</td>
+                                <td>Sarah Somers</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>4</td>
+                                <td>Diego Torres</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>5</td>
+                                <td>Sarah Somers</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Filas de la tabla con datos -->
+                            <tr>
+                                <td>6</td>
+                                <td>Diego Torres</td>
+                                <td>Graphic Designer</td>
+                                <td>29-05-2023</td>
+                                <td>
+                                    <!-- Acciones en la fila de la tabla -->
+                                    <div class="tabla__acciones">
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-square fa-pen-to-square"></i>
+                                        </a>
+                                        <a class="tabla__accion-link" href="#">
+                                            <i class="fa-solid f-xmark fa-user-xmark"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pie de la tarjeta de historial de puesto -->
+            <div class="historialPuesto__card-footer">
+                <div class="historialPuesto__card-footer-contenedor">
+                    <!-- Contador de entradas y navegación de páginas -->
+                    <div class="historialPuesto__card-entradas">
+                        Mostrar 6 entradas
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                    <!-- Navegación de páginas -->
+                    <div class="historialPuesto__paginaNavegacion-contenedor">
+                        <nav class="paginaNavegacion">
+                            <ul class="Pagina__navegacion">
+                                <!-- Botones de navegación de páginas -->
+                                <li class="pagina__items disabled" href="#">
+                                    <a class="pagina__link">Previo</a>
+                                </li>
+                                <li class="pagina__items active">
+                                    <a class="pagina__link" href="#">1</a>
+                                </li>
+                                <li class="pagina__items">
+                                    <a class="pagina__link" href="#">2</a>
+                                </li>
+                                <li class="pagina__items">
+                                    <a class="pagina__link" href="#">Siguiente</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
             </div>
         </section>
     </main>

@@ -13,9 +13,9 @@
     <!-- Íconos de Font Awesome -->
     <script src="https://kit.fontawesome.com/b9ff11db4e.js" crossorigin="anonymous"></script>
     <!-- Título de la página -->
-    <title>hHistorial empleado</title>
+    <title>Historial empleado</title>
 </head>
-<body>
+<body id="historialEmpleado-body">
     <!-- Menu de navegación de la página -->
     <header class="cabecera">
         <div class="cabecera__contenedor">
@@ -91,7 +91,7 @@
     <!-- Contenido principal de la página -->
     <main>
         <!-- Sección de la página principal -->
-        <section class="homePage">
+        <section class="homePage-empleado">
             <div class="contenedor-perfil">
                 <!-- Perfil del usuario -->
                 <div class="perfil">
@@ -221,7 +221,7 @@
                             <!-- Contenedor para el panel de alternancia en dispositivos de escritorio -->
                             <div class="toggle-registro__contenedor--desktop">
                                 <div class="toggle__registro-contenido">
-                                    <div class "toggle-registro__panel">
+                                    <div class ="toggle-registro__panel">
                                         <img class="registro__img" src="assets/registros.svg">
                                     </div>
                                 </div>
@@ -243,16 +243,146 @@
                     </button>       
                 </div>
 
-                <div class="contenedor-banner">
-                    <!-- Banner de bienvenida -->
-                    <div class="homePage__banner">
-                        <!-- <img class="homePage__banner-img" src="./assets/banner.svg" alt="">
-                        <div class="">
-                            <h1 class="homePage__banner-titulo">Bienvenido, Fabian</h1>
-                            <h3 class="homePage__banner-subtitulo">¡Comprobemos que hay para el día de hoy!</h3>
-                        </div> -->
+                <div class="homePage__historialEmpleado">
+                    <div class="contenedor-historialEmpleado">
+                        <!-- Cabecera de la tarjeta de historial de empleado -->
+                        <div class="historialEmpleado__card">
+                            <div class="historialEmpleado__card-cabecera">
+                                <h1 class="historialEmpleado__card-titulo">Historial Empleado</h1>
+                            </div>
+                            
+                            <!-- Cuerpo de la tarjeta de historial de empleado -->
+                            <div class="historialEmpleado__card-cuerpo">
+                                <div class="tabla-responsive">
+                                    <!-- Tabla que muestra el historial del empleado -->
+                                    <table class="historialEmpleado__tabla">
+                                        <thead>
+                                            <tr class="historialEmpleado__tabla--columna">
+                                                <th scope="col" class="tabla__columna--colorBlanco">Empleado</th>
+                                                <th scope="col" class="tabla__columna--colorAzul">Entrada:</th>
+                                                <th scope="col" class="tabla__columna--colorAzul">Salida:</th>
+                                                <th scope="col" class="tabla__columna--colorBlanco">Total:</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Filas de la tabla, cada una representa un registro en el historial -->
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Sarah Somers</td>
+                                                <td class="tabla__color"> 
+                                                    <div class="tabla__base tabla__color--blanco"> Martes, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Martes, 12:45</div> 
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Diego Torres</td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--blanco">Miércoles, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Miércoles, 12:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Sarah Somers</td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--blanco">Jueves, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Jueves, 12:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Diego Torres</td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--blanco">Viernes, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Viernes, 12:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Sarah Somers</td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--blanco">Sábado, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Sábado, 12:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                            <!-- Filas de la tabla con datos -->
+                                            <tr>
+                                                <td class="tabla__color tabla__color--texto">Diego Torres</td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--blanco">Domingo, 10:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--azul">Domingo, 12:45</div>
+                                                </td>
+                                                <td class="tabla__color">
+                                                    <div class="tabla__base tabla__color--verde">2 horas</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <!-- Pie de la tarjeta de historial de empleado -->
+                            <div class="historialEmpleado__card-footer">
+                                <div class="historialEmpleado__card-footer-contenedor">
+                                    <!-- Contador de entradas y navegación de páginas -->
+                                    <div class="historialEmpleado__card-entradas">
+                                        Mostrar 6 entradas
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </div>
+                                    <!-- Navegación de páginas -->
+                                    <div class="historialEmpleado__paginaNavegacion-contenedor">
+                                        <nav class="paginaNavegacion">
+                                            <ul class="Pagina__navegacion">
+                                                <!-- Botones de navegación de páginas -->
+                                                <li class="pagina__item disabled" href="#">
+                                                    <a class="pagina__link">Previo</a>
+                                                </li>
+                                                <li class="pagina__item active">
+                                                    <a class="pagina__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagina__item">
+                                                    <a class="pagina__link" href="#">2</a>
+                                                </li>
+                                                <li class="pagina__item">
+                                                    <a class="pagina__link" href="#">Siguiente</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>

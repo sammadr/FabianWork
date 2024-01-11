@@ -9,8 +9,8 @@
 @import url(../css/modal-puesto.css);
 @import url(../css/empleados.css);
 @import url(../css/notificaciones.css);
-@import url(../css);
-@import url(../css);
+@import url(../css/historialPuesto.css);
+@import url(../css/historialEmpleados.css);
 /* @import url(../css/hamburguesa.css); */
 /* @import url(../css/prue.css);
 @import url(.//aja.css); */
@@ -19,16 +19,20 @@
 /* Definición de variables globales */
 :root {
     --text: #333;
-    --subText: #a8a6a6;
     --input: #eee;
+    --items: #ddd;
     --blanco: #fff;
     --rojo: #FB503B;
     --verde: #4DBA87;
+    --subText: #a8a6a6;
     --azulClaro: #57D6F2;
     --azulMedio: #0583F2;
     --azulTenue: #020659;
     --azulMarino: #010326;
     --azulOscuro: #010440;
+    --rojoHover: #fa9f9377;
+    --verdeHover: #e4fbf098;
+    --azulClaroHover: #caf5ff;
 }
 
 /* Estilos generales del cuerpo del documento */

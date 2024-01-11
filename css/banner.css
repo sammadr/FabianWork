@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px; /* Márgenes en la parte inferior del contenedor */
+    margin-bottom: 50px; /* Márgenes en la parte inferior del contenedor */
 }
 
 /* Estilo para la sección del banner en la página principal */
@@ -48,7 +48,7 @@
 @media only screen and (min-width: 768px) {
     /* Ajustes para el margen inferior del contenedor del banner */
     .contenedor-banner {
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     /* Ajustes para la posición y tamaño del banner en pantallas medianas y grandes */
