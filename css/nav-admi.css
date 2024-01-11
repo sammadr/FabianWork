@@ -46,7 +46,7 @@
 
 .menu--boton {
     background: var(--azulMedio);
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 90px;
     color: var(--blanco);
 }
