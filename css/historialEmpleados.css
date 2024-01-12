@@ -163,13 +163,6 @@
     margin-top: 1rem;
 }
 
-/* Repetición innecesaria, se debe eliminar */
-.historialEmpleado__card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Estilos para el contenedor del pie de la tarjeta del historialEmpleado */
 .historialEmpleado__card-footer-contenedor {
     margin-top: 40px 2px;
