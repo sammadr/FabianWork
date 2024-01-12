@@ -11,9 +11,12 @@
 @import url(../css/notificaciones.css);
 @import url(../css/historialPuesto.css);
 @import url(../css/historialEmpleados.css);
-/* @import url(../css/hamburguesa.css); */
-/* @import url(../css/prue.css);
-@import url(.//aja.css); */
+@import url(../css/historialUsuario.css);
+@import url(../css/usuario-home.css); 
+@import url(../css/nav-usuario.css);
+@import url(../css/notificaciones-usuario.css);
+/* 
+@import url(.//aja.css);
 /* @import url(../css/footer.css);  */
 
 /* Definición de variables globales */
