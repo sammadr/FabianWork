@@ -108,17 +108,17 @@
     align-items: center;
 }
 
-/* Repetición innecesaria, se debe eliminar */
-.usuarioHistorial__paginaNavegacion-contenedor {
-    list-style: none;
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 18px;
-    padding: 0;
+/* Estilos para el enlace de la página en la navegación de páginas */
+.usuarioPagina__link{
+    font-size: 0.8rem;
+    background-color: var(--blanco);
 }
 
-.pagina__link{
-    font-size: 0.8rem;
+/* Estilos al pasar el ratón sobre el enlace de la página en la navegación de páginas */
+.usuarioPagina__link:hover {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+    /* font-weight: 500; */
 }
 
 /* Estilos para pantallas medianas y grandes (más de 768px) */
@@ -136,8 +136,10 @@
     /* Posicionamiento absoluto del contenedor de usuarioHistorial */
     .usuarioHistorial__contenedor {
         position: absolute;
-        top: 81%;
-        left: 58%;
+        /* top: 74%;
+        left: 77%; */
+        top: 74%;
+        left: 85%;
         transform: translate(-50%, -50%);
         width: 30%;
         max-width: 100%;
@@ -168,11 +170,7 @@
         margin-left: 20px;
     }
 
-    /* .pagina__item{
-        width: 10%;
-    } */
-
-    .pagina__link{
+    .usuarioPagina__link{
         font-size: 10px;
     }
 }

@@ -136,7 +136,7 @@
 @media only screen and (min-width: 768px) {
     /* Ajustes para la sección principal en pantallas medianas y grandes */
     .homePage-usuario {
-        margin: 4rem;
+        margin: 4rem 0;
     }
 
     /* Ajustes para el contenedor del perfil en pantallas medianas y grandes */

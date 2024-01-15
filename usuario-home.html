@@ -158,24 +158,18 @@
                     </div>
                 </div>
 
-                <div class="usuario__notificaciones">
-                    <div class="usuarioNotificacion__contenedor">
-                        <h1>Prueba</h1>
-
-                    </div>
-                </div>
-
+                <!-- Historial Usuario -->
                 <div class="usuario__historial">
                     <div class="usuarioHistorial__contenedor">
-                        <!-- Cabecera de la tarjeta de historial de empleado -->
+                        <!-- Cabecera de la tarjeta de historial de usuario -->
                         <div class="usuarioHistorial__card">
                             <h1 class="usuarioHistorial__card-titulo">Historial</h1>
                         </div>
 
-                        <!-- Cuerpo de la tarjeta de historial de empleado -->
+                        <!-- Cuerpo de la tarjeta de historial de usuario -->
                         <div class="usuarioHistorial__card-cuerpo">
                             <div class="usuarioHistorial__tabla-responsive">
-                                <!-- Tabla que muestra el historial del empleado -->
+                                <!-- Tabla que muestra el historial del usuario -->
                                 <table class="usuarioHistorial__tabla">
                                     <thead>
                                         <tr class="usuarioHistorial__tabla--columna">
@@ -263,7 +257,7 @@
                             </div>
                         </div>
 
-                        <!-- Pie de la tarjeta de historial de empleado -->
+                        <!-- Pie de la tarjeta de historial de usuario -->
                         <div class="usuarioHistorial__card-footer">
                             <div class="usuarioHistorial__card-footer-contenedor">
                                 <!-- Contador de entradas y navegación de páginas -->
@@ -277,16 +271,16 @@
                                         <ul class="Pagina__navegacion">
                                             <!-- Botones de navegación de páginas -->
                                             <li class="pagina__item disabled" href="#">
-                                                <a class="pagina__link">Previo</a>
+                                                <a class="usuarioPagina__link">Previo</a>
                                             </li>
                                             <li class="pagina__item active">
-                                                <a class="pagina__link" href="#">1</a>
+                                                <a class="usuarioPagina__link" href="#">1</a>
                                             </li>
                                             <li class="pagina__item">
-                                                <a class="pagina__link" href="#">2</a>
+                                                <a class="usuarioPagina__link" href="#">2</a>
                                             </li>
                                             <li class="pagina__item">
-                                                <a class="pagina__link" href="#">Siguiente</a>
+                                                <a class="usuarioPagina__link" href="#">Siguiente</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -296,9 +290,111 @@
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Usuario notificaciones  -->
+            <div class="usuario__notificaciones">
+                <div class="usuarioNotificacion__contenedor">
+                    <!-- Contenedor Principal -->
+                    <div class="contenedor-comentarios">
+                        <h1 class="comentario__titulo">Comentarios</h1>
 
+                        <ul id="comments-list" class="lista-comentarios">
+                            <li>
+                                <div class="nivel-principal-comentario">
+                                    <!-- Avatar -->
+                                    <div class="avatar-comentario"><img src="./assets/icon-perfil-hombre.png" alt=""></div>
+
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="caja-comentario">
+                                        <div class="encabezado-comentario">
+                                            <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                            <span>hace 20 minutos</span>
+                                            <i class="fi f-usuario fa fa-reply"></i>
+                                            <i class="f-usuario fa-solid fa-trash"></i>
+                                        </div>
+                                        <div class="contenido-comentario">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Respuestas de los comentarios -->
+                                <ul class="lista-comentarios lista-respuestas">
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-perfil-mujer.png" alt=""></div>
+
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-hombre.svg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="nivel-principal-comentario">
+                                    <!-- Avatar -->
+                                    <div class="avatar-comentario"><img src="./assets/icon-mujer.svg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="caja-comentario">
+                                        <div class="encabezado-comentario">
+                                            <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                            <span>hace 10 minutos</span>
+                                            <i class="fi f-usuario fa fa-reply"></i>
+                                            <i class="f-usuario fa-solid fa-trash"></i>
+                                        </div>
+                                        <div class="contenido-comentario">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Formulario de comentarios -->
+                        <form id="formulario-comentario" class="formulario-comentario">
+                            <div class="grupo-formulario">
+                                <textarea id="comment-content" name="comment-content" placeholder="Deja un comentario" required></textarea>
+                            </div>
+                            <div class="grupo-formulario contenedor-subida-archivo">
+                                <input type="file" id="comment-file" name="comment-file" class="entrada-archivo">
+                                <button type="submit">Enviar comentario</button>
+                                <label for="comment-file" class="boton-subida-archivo">
+                                    <i class="fas fa-paperclip icono-subida-archivo"></i> Subir Archivo
+                                </label>
+                            </div>
+                        </form>     
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <!-- Script para el menú hamburguesa -->
     <script class="menuNav__hamburguesa">
         document.getElementById('menu-nav').addEventListener('click', function() {
