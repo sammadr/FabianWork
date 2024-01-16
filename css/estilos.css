@@ -22,12 +22,12 @@
 /* Definición de variables globales */
 :root {
     --text: #333;
-    --texto: #595959;
     --input: #eee;
     --items: #ddd;
     --blanco: #fff;
     --rojo: #FB503B;
     --verde: #4DBA87;
+    --texto: #595959;
     --subText: #a8a6a6;
     --azulClaro: #57D6F2;
     --azulMedio: #0583F2;
