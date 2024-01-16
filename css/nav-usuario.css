@@ -12,8 +12,7 @@
     margin: 0 auto;
 }
 
-/* Bloque del menú */
-/* Menú principal */
+/* Bloque del Menú principal */
 .menuNav__menu {
     display: flex;
     justify-content: space-between; /* Alinea los elementos del menú principal */
@@ -143,8 +142,6 @@ i {
         height: 3px;
         width: 100%;
         transition: 0.3s;
-        /* margin-bottom: 5px;  */
-        /* Agregado para espaciar las barras verticalmente */
     }
 
     .menuNav--boton {

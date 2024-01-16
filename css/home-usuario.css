@@ -85,6 +85,7 @@
     color: var(--azulTenue);
     white-space: nowrap;
     font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -117,9 +118,9 @@
     cursor: pointer;
 }
 
-.f-icon{
+.f-icons{
     color: var(--azulClaro);
-    margin-left: 15rem;
+    margin-left: 11rem;
     cursor: pointer;
 }
 

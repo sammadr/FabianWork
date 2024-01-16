@@ -1,13 +1,13 @@
 /* Estilos generales del cuerpo del historialEmpleado */
 #historialEmpleado-body {
     width: 100%;
-    height: 200vh; 
-    min-height: 100%;
+    height: 150vh; 
+    min-height: auto;
 }
 
 /* Estilos específicos para la página de empleados en la página principal */
 .homePage-empleado {
-    margin: 2rem; 
+    margin: 3rem 2rem; 
 }
 
 /* Estilos para la sección de historialEmpleado */
@@ -30,6 +30,7 @@
     width: 100%;
     max-width: 600px;
     padding: 2rem;
+    margin-bottom: 4rem;
 }
 
 /* Estilos para la tarjeta del historialEmpleado */
@@ -90,6 +91,7 @@
     color: var(--azulTenue);
     white-space: nowrap;
     font-size: 11px;
+    font-weight: bold;
 }
 
 /* Estilos base para las celdas de la tabla */
@@ -234,19 +236,19 @@
 @media only screen and (min-width: 768px) {
     /* Ajuste del margen inferior en la página de empleados */
     .homePage-empleado {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem ;
     }
 
     /* Ajuste del margen inferior de la sección de historialEmpleado */
     .homePage__historialEmpleado {
-        margin-bottom: 0;
+        margin-bottom: 4rem;
     }
 
     /* Posicionamiento absoluto del contenedor de historialEmpleado */
     .contenedor-historialEmpleado {
         position: absolute;
-        top: 100%;
-        left: 58%;
+        top: 87%;
+        left: 57%;
         transform: translate(-50%, -50%);
         width: 55%;
         max-width: 100%;
@@ -280,14 +282,9 @@
         margin: 0 auto;
     }
 
-    /* Ajuste del tamaño del texto y la negrita de las celdas de color en la tabla en pantallas medianas y grandes */
-    .tabla__color {
-        font-size: 13px;
-        font-weight: bold;
-    }
-
     /* Ajuste del tamaño del texto de las celdas de color en la tabla en pantallas medianas y grandes */
     .tabla__color--texto {
-        font-size: 15px;
+        font-size: 13px;
+        font-weight: bold;
     }
 }

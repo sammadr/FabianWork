@@ -49,6 +49,7 @@
     padding: 1rem;
     border-radius: 90px;
     color: var(--blanco);
+    white-space: nowrap;
 }
 
 .menu--boton:hover {
@@ -120,7 +121,7 @@ i {
         justify-content: space-between;
         width: 30px;
         height: 24px;
-        margin-right: 120px; /* Agregado para separar .menu-icon de .menu--boton */
+        margin-right: 100px; /* Agregado para separar .menu-icon de .menu--boton */
     }
 
     .bar {
@@ -142,6 +143,7 @@ i {
         color: var(--blanco);
         width: 100%;
         order: 1;
+        white-space: nowrap;
     }
 
     .menu-boton:hover {

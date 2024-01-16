@@ -1,7 +1,7 @@
 /* Estilo para el cuerpo del historial de puesto */
 #historialPuesto-body {
     width: 100%;
-    height: 200vh; /* Altura mínima del cuerpo */
+    height: 150vh; /* Altura mínima del cuerpo */
     min-height: 100%;
 }
 
@@ -183,13 +183,13 @@
     }
 
     .homePage__historialPuesto {
-        margin-bottom: 0; /* Elimina los márgenes inferiores en dispositivos más grandes */
+        margin-bottom: 4rem; /* Elimina los márgenes inferiores en dispositivos más grandes */
     }
 
     /* Ajustes de posición y tamaño para el contenedor del historial de puesto en dispositivos más grandes */
     .contenedor-historialPuesto {
         position: absolute;
-        top: 100%;
+        top: 85%;
         left: 58%;
         transform: translate(-50%, -50%);
         width: 55%;
