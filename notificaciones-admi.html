@@ -4,18 +4,22 @@
     <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Icono de la pestaña del navegador -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-correo.svg">
+    
     <!-- Estilos externos -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
+    
     <!-- Íconos de Font Awesome -->
     <script src="https://kit.fontawesome.com/b9ff11db4e.js" crossorigin="anonymous"></script>
+    
     <!-- Título de la página -->
     <title>Notificaciones</title>
 </head>
-<body>
+<body id="notificaciones-body">
     <!-- Menu de navegación de la página -->
     <header class="cabecera">
         <div class="cabecera__contenedor">
@@ -53,7 +57,7 @@
                         </a>
                     </li>
                     <li class="cabecera__menu-item">
-                        <a class="cabecera__menu-link" href="./notificaciones.html">
+                        <a class="cabecera__menu-link" href="./notificaciones-admi.html">
                             <i class="fa-solid fa-comments" style="color: #57d6f2;"></i>
                             Notificaciones
                         </a>
@@ -91,7 +95,7 @@
     <!-- Contenido principal de la página -->
     <main>
         <!-- Sección de la página principal -->
-        <section class="homePage">
+        <section class="homePage-notificacion">
             <div class="contenedor-perfil">
                 <!-- Perfil del usuario -->
                 <div class="perfil">
@@ -221,7 +225,7 @@
                             <!-- Contenedor para el panel de alternancia en dispositivos de escritorio -->
                             <div class="toggle-registro__contenedor--desktop">
                                 <div class="toggle__registro-contenido">
-                                    <div class="toggle-registro__panel">
+                                    <div class ="toggle-registro__panel">
                                         <img class="registro__img" src="assets/registros.svg">
                                     </div>
                                 </div>
@@ -243,22 +247,113 @@
                     </button>       
                 </div>
 
-                <div class="contenedor-banner">
-                    <!-- Banner de bienvenida -->
-                    <div class="homePage__banner">
-                        <!-- <img class="homePage__banner-img" src="./assets/banner.svg" alt="">
-                        <div class="">
-                            <h1 class="homePage__banner-titulo">Bienvenido, Fabian</h1>
-                            <h3 class="homePage__banner-subtitulo">¡Comprobemos que hay para el día de hoy!</h3>
-                        </div> -->
+                <!-- ntificaciones administrador -->
+                <div class="admin__notificaciones">
+                    <div class="admiNotificacion__contenedor">
+                        <!-- Contenedor Principal -->
+                        <div class="contenedor-comentarios">
+                            <h1 class="comentario__titulo">Notificaciones</h1>
+
+                            <ul id="comments-list" class="lista-comentarios">
+                                <li>
+                                    <div class="nivel-principal-comentario">
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-perfil-hombre.png" alt=""></div>
+
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                <span>hace 20 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Respuestas de los comentarios -->
+                                    <ul class="lista-comentarios lista-respuestas">
+                                        <li>
+                                            <!-- Avatar -->
+                                            <div class="avatar-comentario"><img src="./assets/avatar-femele.svg" alt=""></div>
+
+                                            <!-- Contenedor del Comentario -->
+                                            <div class="caja-comentario">
+                                                <div class="encabezado-comentario">
+                                                    <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fi f-usuario fa fa-reply"></i>
+                                                    <i class="f-usuario fa-solid fa-trash"></i>
+                                                </div>
+                                                <div class="contenido-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <!-- Avatar -->
+                                            <div class="avatar-comentario"><img src="./assets/icon-hombre.svg" alt=""></div>
+                                            <!-- Contenedor del Comentario -->
+                                            <div class="caja-comentario">
+                                                <div class="encabezado-comentario">
+                                                    <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fi f-usuario fa fa-reply"></i>
+                                                    <i class="f-usuario fa-solid fa-trash"></i>
+                                                </div>
+                                                <div class="contenido-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div class="nivel-principal-comentario">
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/avatar-male.svg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario"><a href="usuario-home.html">Diego Torres</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Formulario de comentarios -->
+                            <form id="formulario-comentario" class="formulario-comentario">
+                                <div class="grupo-formulario">
+                                    <textarea id="comment-content" name="comment-content" placeholder="Deja un comentario" required></textarea>
+                                </div>
+                                <div class="grupo-formulario contenedor-subida-archivo">
+                                    <input type="file" id="comment-file" name="comment-file" class="entrada-archivo">
+                                    <button type="submit">Enviar comentario</button>
+                                    <label for="comment-file" class="boton-subida-archivo">
+                                        <i class="fas fa-paperclip icono-subida-archivo"></i> Subir Archivo
+                                    </label>
+                                </div>
+                            </form>     
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <!-- Derechos de autor y año -->
+
     <footer>
+        <!-- Derechos de autor y año -->
         <div class="footer">
             Copyright © 2023 Fabian Soto.
         </div>

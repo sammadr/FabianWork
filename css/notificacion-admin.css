@@ -1,0 +1,55 @@
+/* Estilos generales del cuerpo del historialEmpleado */
+#notificaciones-body {
+    width: 100%;
+    height: 212vh; 
+    min-height: auto;
+}
+
+/* Estilos específicos para la página de homePage-notificacion en la página principal */
+.homePage-notificacion {
+    margin: 3rem 2rem; 
+}
+
+/* Estilo para el contenedor del admiNotificaciones */
+.admin__notificaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilo para la sección del admiNotificaciones en la página principal */
+.admiNotificacion__contenedor {
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 95px 0; /* Agregado el margen aquí */
+    background-color:  var(--azulClaroBase);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilos para dispositivos más grandes (Desktop) */
+@media only screen and (min-width: 768px) {
+    /* Ajustes para el margen inferior del contenedor del admiNotificaciones */
+    .admin__notificaciones {
+        margin-bottom: 10px;
+    }
+
+    /* Ajustes para la posición y tamaño del admiNotificaciones en pantallas medianas y grandes */
+    .admiNotificacion__contenedor {
+        position: absolute;
+        top: 100%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        max-width: 800px;
+        height: auto;
+        margin: 150px 60 150px; 
+    }
+}
