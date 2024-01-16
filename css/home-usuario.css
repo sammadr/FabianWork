@@ -120,7 +120,7 @@
 
 .f-icons{
     color: var(--azulClaro);
-    margin-left: 11rem;
+    margin-left: 15rem;
     cursor: pointer;
 }
 
@@ -128,7 +128,7 @@
     color: var(--azulTenue);
 }
 
-.f-icon:hover{
+.f-icons:hover{
     color: var(--azulTenue);
 }
 
@@ -221,5 +221,8 @@
     
     .fi-icon{
         margin-left: 12.5rem;
+    }
+    .f-icons{
+        margin-left: 11rem;
     }
 }
