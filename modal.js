@@ -1,4 +1,4 @@
-// Manejo del modal de registro
+///// Manejo del modal de registro
 const btnRegistroModal = document.querySelector('#registro-modal');
 const btnOcultarRegistroModal = document.querySelector('#ocultar-registroModal');
 const contRegistro = document.querySelector('.contenedor-registroModal');
@@ -45,7 +45,9 @@ btnCerrarRegistroModalDesktop.addEventListener('click', (e) => {
 });
 
 
-// Manejo del modal de puesto
+
+
+//// Manejo del modal de puesto
 const btnPuestoModal = document.querySelector('#puesto-modal');
 const btnOcultarModal = document.querySelector('#ocultar-modal');
 const contPuestoModal = document.querySelector('.contenedor-modal');
@@ -64,6 +66,7 @@ btnOcultarModal.addEventListener('click', (e) => {
     contPuestoModal.classList.remove('mostrar-puesto');
 
     const empleados = document.querySelector('.perfil__enlaces');
+    // const empleados = document.querySelector('.tabla__acciones');
 
     // Crear elementos de párrafo para mostrar la información ingresada
     const pNombre = document.createElement('p');

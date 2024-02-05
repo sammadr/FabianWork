@@ -9,13 +9,16 @@
 @import url(../css/banner.css);
 @import url(../css/modal-registro.css);
 @import url(../css/modal-puesto.css);
+@import url(../css/modal-modificarPuesto.css);
 @import url(../css/empleados.css);
 @import url(../css/historialPuesto.css);
+@import url(../css/listaPuestos.css);
 @import url(../css/historialEmpleados.css);
 @import url(../css/historialUsuario.css);
 @import url(../css/notificacion-admin.css);
 @import url(../css/notificaciones-usuario.css);
 @import url(../css/footer.css); 
+@import url(../css/prue.css);
 
 
 /* Definición de variables globales */
