@@ -86,3 +86,28 @@ btnCerrarPuestoModal.addEventListener('click', (e) => {
     e.preventDefault();
     contPuestoModal.classList.remove('mostrar-puesto');
 });
+
+
+// Agrega este código al final de tu archivo o dentro de una etiqueta <script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const abrirModalLinks = document.querySelectorAll('.abrir-modal');
+
+    abrirModalLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.querySelector(`.${modalId}`);
+            modal.style.display = 'block';
+        });
+    });
+
+    // Cerrar modal al hacer clic en el botón de cerrar
+    const cerrarModalBtns = document.querySelectorAll('.cerrar-modal');
+    cerrarModalBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const modal = this.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+});
