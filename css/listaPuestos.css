@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--blanco);
+    background-color: var(--azulClaroBase);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -72,7 +72,7 @@
 
 /* Efecto de resaltado al pasar el ratón sobre las filas de la tabla */
 .listaPuesto__tabla tbody tr:hover {
-    background-color: var(--azulClaroHover);
+    background-color: var(--azulClaro);
 }
 
 /* Estilos para los botones de acciones en la tabla del historial de puesto */
