@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-correo.svg">
+    
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Íconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9ff11db4e.js" crossorigin="anonymous"></script>
+    
+    <!-- Título de la página -->
+    <title>Notificaciones</title>
+</head>
+<body id="notificaciones-body">
+    <!-- Menu de navegación de la página -->
+    <header class="cabecera">
+        <div class="cabecera__contenedor">
+            <!-- Menú hamburguesa para dispositivos móviles -->
+            <div class="menu__contenedor">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu-boton__contenedor">
+                    <!-- Enlace del menú -->
+                    <a class="cabecera__menu-link menu-boton" href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Meet
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Menú de navegación principal -->
+            <nav class="cabecera__menu">
+                <ul class="cabecera__menu-lista">
+                    <!-- Opción del menú -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link menu--boton" href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex" target="_blank">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Meet
+                        </a>
+                    </li>
+                    <!-- Otras opciones del menú -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="./index.html">
+                            <i class="fa-solid fa-house" style="color: var(--azulClaro)"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="./notificaciones-admi.html">
+                            <i class="fa-solid fa-comments" style="color: var(--azulClaro)"></i>
+                            Notificaciones
+                        </a>
+                    </li>
+                    <!-- Menú desplegable de usuario -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="#">
+                            <img class="cabecera__img" src="./assets/icon-hombre.svg" alt="foto de perfil">
+                            Fabian Soto
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- Contenido del menú desplegable -->
+                        <div class="cabecera__submenu"> 
+                            <ul class="cabecera__menu-sublista">
+                                <li>
+                                    <a class="cabecera__menu-sublink" href="#">
+                                        <i class="fa-solid fa-house"></i>
+                                        home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cabecera__menu-sublink" href="#">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        cerrar sesion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección de la página principal -->
+        <section class="homePage-notificacion">
+            <div class="contenedor-perfil">
+                <!-- Perfil del usuario -->
+                <div class="perfil">
+                    <!-- Encabezado del perfil -->
+                    <div class="perfil__encabezado">
+                        <img class="encabezado__foto" src="assets/icon-hombre.svg" alt="">
+                    </div>
+
+                    <!-- Información del perfil -->
+                    <div class="perfil__info">
+                        <h4 class="perfil__titulo">Fabian Soto</h4>
+                        <h5 class="perfil__correo">fabian_admin@gmail.com</h5>
+                        <br>
+                        <hr class="linea">
+                        <!-- Enlaces de acciones del perfil -->
+                        <div class="perfil__enlaces">
+                            <ul class="perfil__lista">
+                                <!-- Botón para agregar puesto -->
+                                <li class="perfil__item">
+                                    <a class="perfil__icon icon__agregar" type="submit" id="puesto-modal">
+                                        <i class="fa-icon fa-solid fa-person-circle-plus"></i>
+                                        Agregar puesto
+                                    </a>
+                                </li>
+
+                                <!-- Contenedor del modal para agregar puesto -->
+                                <div class="contenedor-modal">
+                                    <div class="puesto__contenedor" id="puesto__contenedor">
+                                        <div class="form-puesto__contenedor sign-up">
+                                            <!-- Formulario para agregar puesto -->
+                                            <form>
+                                                <img class="puesto__img" src="./assets/img-puesto.svg">
+                                                <h1 class="puesto__titulo">Nuevo Puesto:</h1>
+                                                <input type="text" placeholder="Nombre del puesto">
+                                                <button class="btn-puesto" type="submit" id="ocultar-modal">Agregar</button>
+                                            </form>
+                                        </div>
+                                        <!-- Alternancia del panel para agregar puesto -->
+                                        <div class="toggle-puesto__contenedor">
+                                            <div class="toggle-puesto">
+                                                <div class="toggle-panel">
+                                                    <span class="cerrar-puestoModal" id="cerrar-puestoModal">
+                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                    </span>
+                                                    <h1 class="toggle-titulo">Agregar Puesto</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Botón para lista de puesto -->
+                                <li class="perfil__item">
+                                    <a class="perfil__icon icon__historial-empleado" href="lista-puesto.html">
+                                        <i class="fa-icon fa-solid fa-list"></i>
+                                        Lista de puesto
+                                    </a>
+                                </li>
+
+                                <!-- Enlace para historial de puestos -->
+                                <li class="perfil__item">
+                                    <a class="perfil__icon icon__historial-puesto" href="historial-puesto.html">
+                                        <i class="fa-icon fa-solid fa-street-view"></i>
+                                        Ver historial puesto
+                                    </a>
+                                </li>
+
+                                <!-- Enlace para historial de empleados -->
+                                <li class="perfil__item">
+                                    <a class="perfil__icon icon__historial-empleado" href="historial-empleado.html">
+                                        <i class="fa-icon fa-solid fa-check-to-slot"></i>
+                                        Historial de empleados
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles y botones de la página -->
+                <div class="botones__contenedor">
+                    <!-- Botón para agregar empleado -->
+                    <button class="perfil__boton" type="submit" id="registro-modal">
+                        <div class="boton--bg">
+                            <div class="icon-contenedor">
+                                <i class="icon-fa fa-solid fa-user-plus"></i>
+                            </div>
+                        </div>
+                        <h4 class="boton--titulo">Agregar empleado</h4>
+                    </button>
+
+                    <!-- Contenedor del modal para agregar empleado -->
+                    <div class="contenedor-registroModal">
+                        <div class="registro__contenedor" id="registro__contenedor">
+                            <div class="form-registro__contenedor sign-up">
+                                <!-- Formulario para agregar empleado -->
+                                <form>
+                                    <h1 class="registro__titulo">Crear empleado</h1>
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Apellido">
+                                    <input type="text" placeholder="Teléfono">
+                                    <select name="puesto">
+                                        <option selected="selected" value="puesto">Puesto</option>
+                                        <option value="design-grafic">Diseñador Gráfico</option>
+                                        <option value="programador">Programador</option>
+                                    </select>
+                                    <select name="gender">
+                                        <option selected="selected" value="male">Selecciona el Género</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                    <select name="status">
+                                        <option selected="selected" value="select">Seleccionar</option>
+                                        <option value="activo">Activo</option>
+                                        <option value="inactivo">Inactivo</option>
+                                    </select>
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <button class="btn-registro" type="submit" id="ocultar-registroModal">CREAR EMPLEADO</button>
+                                </form>
+                            </div>
+                
+                            <!-- Contenedor para el panel de alternancia (toggle) en dispositivos móviles -->
+                            <div class="toggle-registro__contenedor">
+                                <div class="toggle__registro-contenido">
+                                    <div class="toggle-registro__panel">
+                                        <img class="registro__img" src="assets/registros.svg">
+                                    </div>
+                                </div>
+                                <span class="cerrar-modal" id="cerrar-registroModal">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                </span>
+                            </div>
+                
+                            <!-- Contenedor para el panel de alternancia en dispositivos de escritorio -->
+                            <div class="toggle-registro__contenedor--desktop">
+                                <div class="toggle__registro-contenido">
+                                    <div class ="toggle-registro__panel">
+                                        <img class="registro__img" src="assets/registros.svg">
+                                    </div>
+                                </div>
+                                <span class="cerrar-modal" id="cerrar-registroModalDesktop">
+                                    <i class="fa-regular fa-circle-xmark"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón para lista de empleados -->
+                    <button class="perfil__boton boton">
+                        <div class="boton--bg">
+                            <div class="icon-contenedor">
+                                <i class="icon-fa fa-solid fa-users"></i>
+                            </div>
+                        </div>
+                        <a class="boton--titulo" href="./empleados.html">Lista de empleados</a>
+                    </button>       
+                </div>
+
+                <!-- ntificaciones administrador -->
+                <div class="admin__notificaciones">
+                    <div class="admiNotificacion__contenedor">
+                        <!-- Contenedor Principal -->
+                        <div class="contenedor-comentarios">
+                            <h1 class="comentario__titulo">Notificaciones</h1>
+
+                            <ul id="comments-list" class="lista-comentarios">
+                                <li>
+                                    <div class="nivel-principal-comentario">
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-perfil-hombre.png" alt=""></div>
+
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                <span>hace 20 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Respuestas de los comentarios -->
+                                    <ul class="lista-comentarios lista-respuestas">
+                                        <li>
+                                            <!-- Avatar -->
+                                            <div class="avatar-comentario"><img src="./assets/avatar-femele.svg" alt=""></div>
+
+                                            <!-- Contenedor del Comentario -->
+                                            <div class="caja-comentario">
+                                                <div class="encabezado-comentario">
+                                                    <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fi f-usuario fa fa-reply"></i>
+                                                    <i class="f-usuario fa-solid fa-trash"></i>
+                                                </div>
+                                                <div class="contenido-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <!-- Avatar -->
+                                            <div class="avatar-comentario"><img src="./assets/icon-hombre.svg" alt=""></div>
+                                            <!-- Contenedor del Comentario -->
+                                            <div class="caja-comentario">
+                                                <div class="encabezado-comentario">
+                                                    <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fi f-usuario fa fa-reply"></i>
+                                                    <i class="f-usuario fa-solid fa-trash"></i>
+                                                </div>
+                                                <div class="contenido-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div class="nivel-principal-comentario">
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/avatar-male.svg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario"><a href="usuario-home.html">Diego Torres</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Formulario de comentarios -->
+                            <form id="formulario-comentario" class="formulario-comentario">
+                                <div class="grupo-formulario">
+                                    <textarea id="comment-content" name="comment-content" placeholder="Deja un comentario" required></textarea>
+                                </div>
+                                <div class="grupo-formulario contenedor-subida-archivo">
+                                    <input type="file" id="comment-file" name="comment-file" class="entrada-archivo">
+                                    <button type="submit">Enviar comentario</button>
+                                    <label for="comment-file" class="boton-subida-archivo">
+                                        <i class="fas fa-paperclip icono-subida-archivo"></i> Subir Archivo
+                                    </label>
+                                </div>
+                            </form>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Derechos de autor y año -->
+        <div class="footer">
+            Copyright © 2023 Fabian Soto.
+        </div>
+    </footer>
+
+    <!-- Script para el menú hamburguesa -->
+    <script class="nav__hamburguesa">
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.cabecera__menu').classList.toggle('open');
+        });
+    </script>
+
+    <!-- Script externo para manejar modales -->
+    <script src="modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* Estilo para el cuerpo del historial de puesto */
+#listaPuesto-body {
+    width: 100%;
+    height: 150vh; /* Altura mínima del cuerpo */
+    min-height: 100%;
+}
+
+/* Estilos generales para la página de inicio */
+.homePage-listaPuesto {
+    margin: 2rem; /* Márgenes externos */
+}
+
+/* Estilos para la sección de historial de puesto */
+.homePage__listaPuesto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Márgenes inferiores */
+}
+
+/* Contenedor principal del historial de puesto */
+.contenedor-listaPuesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulClaroBase);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+
+/* Estilos para la tarjeta del historial de puesto */
+.listaPuesto__card {
+    width: 100%;
+}
+
+/* Estilos para el título de la tarjeta del historial de puesto */
+.listaPuesto__card-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--azulTenue);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Estilos para la tabla del historial de puesto */
+.listaPuesto__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/* Estilos para las columnas de la tabla del historial de puesto */
+.listaPuesto__tabla--columna {
+    color: var(--azulMedio);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para las celdas de la tabla del historial de puesto */
+.listaPuesto__tabla th,
+.listaPuesto__tabla td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Efecto de resaltado al pasar el ratón sobre las filas de la tabla */
+.listaPuesto__tabla tbody tr:hover {
+    background-color: var(--azulClaro);
+}
+
+/* Estilos para los botones de acciones en la tabla del historial de puesto */
+.f-square {
+    color: var(--verde);
+    background-color: var(--verdeHover);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--verde);
+}
+
+.f-xmark {
+    color: var(--rojo);
+    background-color: var(--rojoHover);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--rojo);
+}
+
+/* Efecto de resaltado al pasar el ratón sobre los botones de acciones */
+.f-square:hover {
+    color: var(--azulTenue);
+    border: 2px solid var(--azulTenue);
+}
+
+.f-xmark:hover {
+    color: var(--azulTenue);
+    border: 2px solid var(--azulTenue);
+}
+
+/* Evitar que el texto en las celdas de la tabla se desborde */
+.tabla__acciones {
+    white-space: nowrap;
+}
+
+/* Estilos para el pie de la tarjeta del historial de puesto */
+.listaPuesto__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Contenedor para el pie de la tarjeta del historial de puesto */
+.listaPuesto__card-footer-contenedor {
+    margin-top: 40px 2px; /* Márgenes superiores e inferiores */
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Etiqueta para mostrar la cantidad de entradas */
+.listaPuesto__card-entradas {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--azulTenue);
+    font-weight: bold;
+}
+
+/* Contenedor para la navegación de páginas en el pie de la tarjeta */
+.listaPuesto__paginaNavegacion-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+/* Lista de navegación de páginas en el pie de la tarjeta */
+.listaPuesto__paginaNavegacion-contenedor {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento de la lista de navegación de páginas */
+.pagina__items {
+    display: inline-block;
+}
+
+/* Enlace de la lista de navegación de páginas */
+.pagina__items a {
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--items);
+    border-radius: 3px;
+    color: var(--text);
+}
+
+/* Estilo para el enlace activo en la lista de navegación de páginas */
+.pagina__items.active a {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+}
+
+/* Icono de flecha derecha en la lista de navegación de páginas */
+.fa-angles-right {
+    font-size: 0.5rem;
+}
+
+/* Efecto de resaltado al pasar el ratón sobre los enlaces de la lista de navegación de páginas */
+.pagina__link:hover {
+    background-color: var(--azulClaroHover);
+    font-weight: 500;
+}
+
+/* Estilos responsivos para dispositivos de pantalla más grandes */
+@media only screen and (min-width: 768px) {
+    .homePage-historial {
+        margin: 3.5rem 4rem; /* Márgenes externos en dispositivos más grandes */
+    }
+
+    .homePage__listaPuesto {
+        margin-bottom: 4rem; /* Elimina los márgenes inferiores en dispositivos más grandes */
+    }
+
+    /* Ajustes de posición y tamaño para el contenedor del historial de puesto en dispositivos más grandes */
+    .contenedor-listaPuesto {
+        position: absolute;
+        top: 85%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        width: 55%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustes de tamaño para la tarjeta del historial de puesto en dispositivos más grandes */
+    .listaPuesto__card {
+        width: 100%;
+    }
+
+    /* Alineación central del título de la tarjeta del historial de puesto en dispositivos más grandes */
+    .listaPuesto__card-titulo {
+        text-align: center;
+    }
+
+    /* Márgenes superiores e inferiores para el contenedor del pie de la tarjeta en dispositivos más grandes */
+    .listaPuesto__card-footer-contenedor {
+        margin: 20px 0;
+    }
+
+    /* Ajustes de posición para el contenedor de navegación de páginas en dispositivos más grandes */
+    .listaPuesto__paginaNavegacion-contenedor {
+        margin-left: 190px;
+    }
+}
+
+

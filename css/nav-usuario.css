@@ -1,0 +1,229 @@
+/* Bloque principal */
+.menu {
+    background: var(--blanco);
+    padding: 2rem 0;
+}
+
+/* Bloque del contenedor */
+.menu__contenedor {
+    width: 80%;
+    display: flex; 
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+/* Bloque del Menú principal */
+.menuNav__menu {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos del menú principal */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Elemento de la lista del menú */
+.menuNav__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento individual del menú */
+.menuNav__item {
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu__img {
+    width: 10%;
+    margin-right: 4px;
+}
+
+/* Enlace del menú */
+.menuNav__link {
+    text-decoration: none;
+    color: var(--azulTenue);
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menuNav--boton {
+    background: var(--azulMedio);
+    padding: 1rem;
+    border-radius: 90px;
+    color: var(--blanco);
+}
+
+.menuNav--boton:hover {
+    color: var(--azulTenue);
+    background-color: var(--azulClaro);
+}
+
+.menuNav-boton{
+    display: none;
+}
+
+.fa-regular {
+    color: var(--azulTenue);
+}
+
+/* Estilos para el menú desplegable */
+.menuNav__item ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--blanco);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menuNav__item:hover ul {
+    display: block;
+}
+
+.menuNav__sublink {
+    display: block;
+    text-decoration: none;
+    color: var(--azulTenue);
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+i {
+    margin-right: 8px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .menu__lista {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .menu__item {
+        margin-right: 0;
+    }
+
+    .menu__link {
+        font-size: 18px; 
+    }
+
+    .menu__img {
+        width: 20%;
+        margin-right: 4px;
+    }
+
+    .menuNav__contenedor {
+        display: flex;
+        align-items: center; /* Alinea los elementos verticalmente */
+    }
+
+    .menuNav {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 24px;
+        margin-right: 120px; /* Agregado para separar .menu-icon de .menu--boton */
+    }
+
+     /* Ajuste en las barras del menú hamburguesa */
+    .barNav {
+        background-color: var(--azulTenue);
+        height: 3px;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .menuNav--boton {
+        display: none;
+    }
+
+    .menuNav-boton {
+        display: block;
+        background: var(--azulMedio);
+        padding: 1.2rem;
+        border-radius: 90px;
+        color: var(--blanco);
+        width: 100%;
+        order: 1;
+    }
+
+    .menuNav-boton:hover {
+        color: var(--azulTenue);
+        background-color: var(--azulClaro);
+    }
+
+    .menuNav__menu {
+        display: none;
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .menuNav__menu.open {
+        display: flex;
+        flex-direction: row-reverse; /* Cambiado a column para que los elementos se muestren en columna */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 25vh;
+        background-color: var(--blanco);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .menuNav__sublista { 
+        list-style: none;
+        padding: 0;
+    }
+
+    .menuNav__submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--blanco);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste en el selector para mostrar el menú desplegable */
+.menuNav__item:hover .menuNav__submenu {
+    display: flex;
+    flex-direction: column; /* Cambiado a column para que los elementos se muestren en columna */
+    align-items: flex-start; /* Añadido para alinear los elementos verticalmente en la columna */
+}
+
+.menuNav__sublista {
+    list-style: none;
+    padding: 0;
+}
+
+.menuNav__submenu {
+    display: flex;
+    flex-direction: column; /* Añadido para alinear los elementos del menú desplegable en columna */
+    align-items: flex-start; /* Añadido para alinear los elementos verticalmente en la columna */
+}
+
+.menuNav__sublink {
+    display: block;
+    text-decoration: none;
+    color: var(--azulTenue);
+    padding: 8px 25px; /* Ajustado el espaciado */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+}

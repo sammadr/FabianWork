@@ -1,0 +1,179 @@
+/* Estilos generales para resetear márgenes y rellenar cajas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para la sección de inicio de sesión */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos para el título del formulario */
+.form__titulo {
+    color: var(--azulTunue);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.login__contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 480px;
+    background-color: var(--blanco);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0; /* Agregado el margen inferior */
+}
+
+/* Estilos para los enlaces dentro del contenedor */
+.login__contenedor a {
+    color: var(--text);
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+a:hover{
+    color: var(--azulMedio);
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login__contenedor button {
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--azulTenue);
+}
+
+/* Estilos para el formulario dentro del contenedor */
+.login__contenedor form {
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100%;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login__contenedor input {
+    background-color: var(--input);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Estilos para el contenedor del formulario */
+.form__contenedor {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos específicos para la sección de inicio de sesión */
+.sign-in {
+    order: 2;
+    width: 100%;
+}
+
+/* Estilos para el contenedor de alternancia en dispositivos móviles */
+.toggle__contenedor {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* Estilos para el contenedor de alternancia en dispositivos de escritorio */
+.toggle__contenedor--desktop{
+    display: none;
+}
+
+/* Estilos para el panel de alternancia */
+.toggle__login {
+    background: var(--azulMedio);
+    color: var(--blanco);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el panel de alternancia en dispositivos móviles */
+.toggle__panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Estilos para la imagen en el panel de alternancia */
+.login__img {
+    width: 50%;
+    padding-left: 0;
+    padding: 10px;
+}
+
+/* Media queries para dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+    /* Ajustes de diseño para dispositivos de escritorio */
+    .login__contenedor {
+        max-width: 768px;
+        flex-direction: row;
+        border-radius: 30px;
+    }
+
+    /* Ocultar el contenedor de alternancia en dispositivos de mobile */
+    .toggle__contenedor {
+        display: none;
+        max-width: 768px;
+    }
+
+    /* Mostrar el contenedor de alternancia en dispositivos de escritorio */
+    .toggle__contenedor--desktop{
+        display:block;
+        order: 2;
+    }
+
+    /* Ajustes de diseño para la imagen en dispositivos de escritorio */
+    .login__img {
+        width: 80%;
+        padding-left: 0;
+        padding-top: 100px;
+    }
+}
+
+

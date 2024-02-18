@@ -1,0 +1,176 @@
+/* Estilos para la sección de usuarioHistorial */
+.usuario__historial {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0; 
+}
+
+/* Contenedor principal del usuarioHistorial */
+.usuarioHistorial__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulMedio);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+/* Estilos para la tarjeta del usuarioHistorial */
+.usuarioHistorial__card {
+    width: 100%;
+}
+
+/* Estilos para el título de la tarjeta del usuarioHistorial */
+.usuarioHistorial__card-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--azulTenue);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Estilos para la tabla del usuarioHistorial */
+.usuarioHistorial__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/* Estilos para las columnas de la tabla del usuarioHistorial */
+.usuarioHistorial__tabla--columna {
+    color: var(--azulTenue);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para las celdas de la tabla del usuarioHistorial */
+.usuarioHistorial__tabla th, .usuarioHistorial__tabla td {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 20px; 
+}
+
+
+/* Estilos para las celdas de la tabla del historialEmpleado */
+.tabla__color {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* Estilos base para las celdas de la tabla */
+.tabla__baseUsuario {
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+
+/* Estilos para el pie de la tarjeta del usuarioHistorial */
+.usuarioHistorial__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+/* Estilos para el contenedor del pie de la tarjeta del usuarioHistorial */
+.usuarioHistorial__card-footer-contenedor {
+    margin-top: 40px 2px;
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Estilos para la información de entradas mostradas en el pie de la tarjeta del usuarioHistorial */
+.usuarioHistorial__card-entradas {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor de la navegación de páginas en el pie de la tarjeta del usuarioHistorial */
+.usuarioHistorial__paginaNavegacion-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el enlace de la página en la navegación de páginas */
+.usuarioPagina__link{
+    font-size: 0.8rem;
+    background-color: var(--blanco);
+}
+
+/* Estilos al pasar el ratón sobre el enlace de la página en la navegación de páginas */
+.usuarioPagina__link:hover {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+    /* font-weight: 500; */
+}
+
+/* Estilos para pantallas medianas y grandes (más de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Ajuste del margen inferior en la página de empleados */
+    .homePage-usuario {
+        margin-bottom: 8rem;
+    }
+
+    /* Ajuste del margen inferior de la sección de usuarioHistorial */
+    .usuario__historial {
+        margin-bottom: 0;
+    }
+
+    /* Posicionamiento absoluto del contenedor de usuarioHistorial */
+    .usuarioHistorial__contenedor {
+        position: absolute;
+        /* top: 74%;
+        left: 77%; */
+        top: 74%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste del ancho de la tarjeta del usuarioHistorial en pantallas medianas y grandes */
+    .usuarioHistorial__card {
+        width: 100%;
+    }
+
+    /* Centrado del título de la tarjeta del usuarioHistorial */
+    .usuarioHistorial__card-titulo {
+        text-align: center;
+    }
+
+    /* Ajuste del margen superior del contenedor del pie de la tarjeta del usuarioHistorial */
+    .usuarioHistorial__card-footer-contenedor {
+        margin: 20px 0;
+    }
+
+    .usuarioHistorial__card-entradas{
+        font-size: 12px;
+    }
+
+    /* Ajuste del margen izquierdo del contenedor de navegación de páginas en la tarjeta del usuarioHistorial */
+    .usuarioHistorial__paginaNavegacion-contenedor {
+        margin-left: 20px;
+    }
+
+    .usuarioPagina__link{
+        font-size: 10px;
+    }
+}

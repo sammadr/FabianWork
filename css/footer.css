@@ -1,0 +1,20 @@
+/* Estilos para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+/* Media queries para dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+    footer {
+        position: static; /* Cambia a posición estática en dispositivos de escritorio */
+    }
+}

@@ -1,0 +1,228 @@
+/* Estilo para el cuerpo de la página principal */
+#usuario-body {
+    width: 100%;
+    height: 150vh; /* Altura del 150% del viewport height */
+    min-height: 100%;
+}
+
+/* Estilo para la sección principal de la página */
+.homePage-usuario {
+    margin: 2rem; /* Márgenes alrededor de la sección principal */
+}
+
+/* Estilo para el contenedor del usuario */
+.usuarioHomePage__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el usuario del usuario */
+.usuario__perfil {
+    width: 100%;
+}
+
+/* Estilo para el encabezado del usuario */
+.usuario__encabezado {
+    background-color: var(--azulMedio);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Estilo para la foto de usuario en el encabezado */
+.usuario__img {
+    width: 50%;
+    position: relative;
+    bottom: -50px;
+    left: 80px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+}
+
+/* Estilo para la información del usuario */
+.usuario__info {
+    background: var(--blanco);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    min-height: 100px;
+}
+
+/* Estilo para el título del usuario */
+.usuario__titulo {
+    color: var(--azulTenue);
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* Estilo para el correo del usuario */
+.usuario__puesto {
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    color: var(--subText);
+    padding: 0 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* Estilo para los enlaces de acciones del usuario */
+.usuario__enlaces {
+    padding: 1.8rem 1.5rem;
+}
+
+/* Estilo para los elementos de la lista de enlaces */
+.usuario__enlaces .usuario__item {
+    margin-bottom: 2rem;
+}
+
+/* Estilo para los iconos de los enlaces */
+.usuario__icon {
+    color: var(--azulTenue);
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Estilo para los íconos de Font Awesome en los enlaces */
+.fa-icon {
+    color: var(--azulClaro);
+    font-size: 1.5rem;
+}
+
+/* Línea de separación entre secciones */
+.linea {
+    color: var(--subText);
+}
+
+
+.usuario__descripcionContenedor{
+    padding: 30px;
+}
+
+.usuario__descripcion{
+    color: var(--subText);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.fi-icon{
+    color: var(--azulClaro);
+    margin-left: 17rem;
+    cursor: pointer;
+}
+
+.f-icons{
+    color: var(--azulClaro);
+    margin-left: 15rem;
+    cursor: pointer;
+}
+
+.fi-icon:hover{
+    color: var(--azulTenue);
+}
+
+.f-icons:hover{
+    color: var(--azulTenue);
+}
+
+
+/* Estilos para pantallas medianas y grandes (más de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Ajustes para la sección principal en pantallas medianas y grandes */
+    .homePage-usuario {
+        margin: 4rem 0;
+    }
+
+    /* Ajustes para el contenedor del perfil en pantallas medianas y grandes */
+    .usuarioHomePage__contenedor {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    /* Ajustes para el ancho del usuario en pantallas medianas y grandes */
+    .usuario__perfil {
+        width: 22vw;
+    }
+
+    /* Ajustes para el fondo del encabezado del usuario en pantallas medianas y grandes */
+    .usuario__encabezado {
+        background-color: var(--azulMedio);
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    /* Ajustes para la posición de la foto de usuario en pantallas medianas y grandes */
+    .usuario__img {
+        width: 50%;
+        bottom: -50px;
+        left: 25%;
+    }
+
+    /* Ajustes para la información del usuario en pantallas medianas y grandes */
+    .usuario__info {
+        background: var(--blanco);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 0px 0px 10px 10px;
+        padding-top: 80px;
+        padding-bottom: 5px;
+        min-height: 100px;
+    }
+
+    /* Ajustes para el tamaño del título del usuario en pantallas medianas y grandes */
+    .usuario__titulo {
+        font-size: 18px;
+    }
+
+    /* Ajustes para el tamaño del correo del perfil en pantallas medianas y grandes */
+    .usuario__puesto{
+        font-size: 10px;
+    }
+
+    .usuario__descripcionContenedor{
+        padding: 20px;
+    }
+
+    .usuario__descripcion{
+        color: var(--subText);
+        text-align: center;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    /* Ajustes para los enlaces de acciones del usuario en pantallas medianas y grandes */
+    .usuario__enlaces {
+        padding: 1.8rem 1.5rem;
+    }
+    
+    /* Ajustes para los elementos de la lista de enlaces en pantallas medianas y grandes */
+    .usuario__enlaces .usuario__item {
+        margin-bottom: 2rem;
+    }
+    
+    /* Ajustes para el tamaño de los iconos de los enlaces en pantallas medianas y grandes */
+    .usuario__icon {
+        font-size: 11px;
+    }
+    
+    /* Ajustes para el tamaño de los íconos de Font Awesome en los enlaces en pantallas medianas y grandes */
+    .fa-icon {
+        font-size: 1.5rem;
+    }
+
+    .f-icon{
+        margin-left: 11rem;
+    }
+    
+    .fi-icon{
+        margin-left: 12.5rem;
+    }
+    .f-icons{
+        margin-left: 11rem;
+    }
+}

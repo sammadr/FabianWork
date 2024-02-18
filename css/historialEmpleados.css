@@ -1,0 +1,290 @@
+/* Estilos generales del cuerpo del historialEmpleado */
+#historialEmpleado-body {
+    width: 100%;
+    height: 150vh; 
+    min-height: auto;
+}
+
+/* Estilos específicos para la página de empleados en la página principal */
+.homePage-empleado {
+    margin: 3rem 2rem; 
+}
+
+/* Estilos para la sección de historialEmpleado */
+.homePage__historialEmpleado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+}
+
+/* Contenedor principal del historialEmpleado */
+.contenedor-historialEmpleado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulMedio);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Estilos para la tarjeta del historialEmpleado */
+.historialEmpleado__card {
+    width: 100%;
+}
+
+/* Estilos para el título de la tarjeta del historialEmpleado */
+.historialEmpleado__card-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--azulTenue);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Estilos para la tabla del historialEmpleado */
+.historialEmpleado__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/* Estilos para las columnas de la tabla del historialEmpleado */
+.historialEmpleado__tabla--columna {
+    color: var(--azulTenue);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para las celdas de la tabla del historialEmpleado */
+.historialEmpleado__tabla th, .historialEmpleado__tabla td {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 20px; 
+}
+
+/* Estilos específicos para las celdas de color blanco en la tabla */
+.tabla__columna--colorBlanco {
+    color: var(--blanco);
+}
+
+/* Estilos específicos para las celdas de color azul en la tabla */
+.tabla__columna--colorAzul {
+    color: var(--azulTenue);
+}
+
+/* Estilos para las celdas de la tabla del historialEmpleado */
+.tabla__color {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para el texto de las celdas de color en la tabla del historialEmpleado */
+.tabla__color--texto {
+    color: var(--azulTenue);
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Estilos base para las celdas de la tabla */
+.tabla__base {
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+/* Estilos específicos para las celdas de color blanco */
+.tabla__color--blanco {
+    background-color: var(--blanco);
+    color: var(--azulTenue);
+}
+
+/* Estilos específicos para las celdas de color azul */
+.tabla__color--azul {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+}
+
+/* Estilos específicos para las celdas de color verde */
+.tabla__color--verde {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+/* Estilos para los íconos cuadrados y x-mark en la tabla */
+.f-square {
+    color: var(--verde);
+    background-color: var(--verdeHover);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--verde);
+}
+
+.f-xmark {
+    color: var(--rojo);
+    background-color: var(--rojoHover);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--rojo);
+}
+
+/* Estilos al pasar el ratón sobre los íconos cuadrados y x-mark */
+.f-square:hover {
+    color: var(--azulTenue);
+    border: 2px solid var(--azulTenue);
+}
+
+.f-xmark:hover {
+    color: var(--azulTenue);
+    border: 2px solid var(--azulTenue);
+}
+
+/* Estilos para las acciones de la tabla, evitando el desbordamiento de texto */
+.tabla__acciones {
+    white-space: nowrap;
+}
+
+/* Estilos para el pie de la tarjeta del historialEmpleado */
+.historialEmpleado__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Estilos para el contenedor del pie de la tarjeta del historialEmpleado */
+.historialEmpleado__card-footer-contenedor {
+    margin-top: 40px 2px;
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Estilos para la información de entradas mostradas en el pie de la tarjeta del historialEmpleado */
+.historialEmpleado__card-entradas {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor de la navegación de páginas en el pie de la tarjeta del historialEmpleado */
+.historialEmpleado__paginaNavegacion-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+/* Repetición innecesaria, se debe eliminar */
+.historialEmpleado__paginaNavegacion-contenedor {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 18px;
+    padding: 0;
+}
+
+/* Estilos para los ítems de la navegación de páginas */
+.pagina__item {
+    display: inline-block;
+}
+
+/* Estilos para los enlaces de la navegación de páginas */
+.pagina__item a {
+    text-decoration: none;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid var(--blanco);
+    border-radius: 3px;
+    color: var(--text);
+}
+
+/* Estilos para los enlaces activos de la navegación de páginas */
+.pagina__item.active a {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+}
+
+/* Estilos para el ícono de flechas a la derecha en la navegación de páginas */
+.fa-angles-right {
+    font-size: 0.5rem;
+}
+
+/* Estilos para el enlace de la página en la navegación de páginas */
+.pagina__link {
+    background-color: var(--blanco);
+}
+
+/* Estilos al pasar el ratón sobre el enlace de la página en la navegación de páginas */
+.pagina__link:hover {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+    /* font-weight: 500; */
+}
+
+/* Estilos para pantallas medianas y grandes (más de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Ajuste del margen inferior en la página de empleados */
+    .homePage-empleado {
+        margin-bottom: 4rem ;
+    }
+
+    /* Ajuste del margen inferior de la sección de historialEmpleado */
+    .homePage__historialEmpleado {
+        margin-bottom: 4rem;
+    }
+
+    /* Posicionamiento absoluto del contenedor de historialEmpleado */
+    .contenedor-historialEmpleado {
+        position: absolute;
+        top: 87%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        width: 55%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste del ancho de la tarjeta del historialEmpleado en pantallas medianas y grandes */
+    .historialEmpleado__card {
+        width: 100%;
+    }
+
+    /* Centrado del título de la tarjeta del historialEmpleado */
+    .historialEmpleado__card-titulo {
+        text-align: center;
+    }
+
+    /* Ajuste del margen superior del contenedor del pie de la tarjeta del historialEmpleado */
+    .historialEmpleado__card-footer-contenedor {
+        margin: 20px 0;
+    }
+
+    /* Ajuste del margen izquierdo del contenedor de navegación de páginas en la tarjeta del historialEmpleado */
+    .historialEmpleado__paginaNavegacion-contenedor {
+        margin-left: 220px;
+    }
+
+    /* Ajuste del ancho y el relleno de las celdas de la tabla en pantallas medianas y grandes */
+    .tabla__base {
+        width: 75%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    /* Ajuste del tamaño del texto de las celdas de color en la tabla en pantallas medianas y grandes */
+    .tabla__color--texto {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

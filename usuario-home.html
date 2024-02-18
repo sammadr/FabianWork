@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/avatar-femele.svg">
+    
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Íconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9ff11db4e.js" crossorigin="anonymous"></script>
+    
+    <!-- Título de la página -->
+    <title>Usuario Home</title>
+</head>
+<body id="usuario-body">
+    <!-- Menu de navegación de la página -->
+    <header class="menu">
+        <div class="menu__contenedor">
+            <!-- Menú hamburguesa para dispositivos móviles -->
+            <div class="menuNav__contenedor">
+                <div class="menuNav" id="menu-nav">
+                    <div class="barNav"></div>
+                    <div class="barNav"></div>
+                    <div class="barNav"></div>
+                </div>
+                <div class="menuNav-boton__contenedor">
+                    <!-- Enlace del menú -->
+                    <a href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex" class="menuNav__link menuNav-boton">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Meet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menú de navegación principal -->
+            <nav class="menuNav__menu">
+                <ul class="menuNav__lista">
+                    <!-- Opción del menú -->
+                    <li class="menuNav__item">
+                        <a href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex" class="menuNav__link menuNav--boton" target="_blank">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Meet
+                        </a>
+                    </li>
+                    <!-- Menú desplegable de usuario -->
+                    <li class="menuNav__item">
+                        <a href="#" class="menuNav__link">
+                            <img class="menu__img" src="./assets/icon-perfil-mujer.png">
+                            Sarah Somers
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- Contenido del menú desplegable -->
+                        <div class="menuNav__submenu">
+                            <ul class="menuNav__sublista">
+                                <li>
+                                    <a href="#" class="menuNav__sublink">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        Cerrar sesion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de la página principal -->
+        <section class="homePage-usuario">
+            <div class="usuarioHomePage__contenedor">
+                <!-- Perfil del usuario -->
+                <div class="usuario__perfil">
+                    <!-- Encabezado del perfil -->
+                    <div class="usuario__encabezado">
+                        <img class="usuario__img" src="./assets/icon-mujer.svg">
+                    </div>
+
+                    <!-- Información del perfil -->
+                    <div class="usuario__info">
+                        <h4 class="usuario__titulo">Sarah Somers</h4>
+                        <h5 class="usuario__puesto">Graphic Designer at Self Employed</h5>
+                        <br>
+                        <hr class="linea">
+                        <!--  -->
+                        <div class="usuario__contenedorDescripcion">
+                            <div class="usuario__descripcionContenedor">
+                                <p class="usuario__descripcion">
+                                    Lorem ipsum dolor sit amet consectetur, 
+                                    adipisicing elit. Quisquam odit aliquid soluta aperiam, 
+                                    maxime necessitatibus laudantium sint dolore, 
+                                    minima suscipit unde aut quod fugit,  suscipit unde aut quod fugit,
+                                    voluptate nostrumvoluptatem inventore deleniti nam?
+                                </p>
+                            </div>
+                            <i class="fi-icon fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <br>
+                        <hr class="linea">
+                        <!-- Enlaces de acciones del perfil -->
+                        <div class="usuario__enlaces">
+                            <ul class="usuario__lista">
+                                <!-- Botón para agregar puesto -->
+                                <li class="usuario__item">
+                                    <a class="usuario__icon" type="submit" id="puesto-modal">
+                                        <i class="fa-icon fa-solid fa-globe"></i>
+                                        www.example.com
+                                    </a>
+                                </li>
+                                
+                                <!-- Enlace para historial de empleados -->
+                                <li class="usuario__item">
+                                    <a class="usuario__icon" href="historial-empleado.html">
+                                        <i class="fa-icon fa-solid fa-envelope"></i>
+                                        example@gmail.com
+                                    </a>
+                                </li>
+
+                                <!-- Enlace para historial de puestos -->
+                                <li class="usuario__item">
+                                    <a class="usuario__icon" href="historial-puesto.html">
+                                        <i class="fa-icon fa-brands fa-linkedin"></i>
+                                        www.linkedin.com/in/example
+                                    </a>
+                                </li>
+
+                                <!-- Enlace para historial de puestos -->
+                                <li class="usuario__item">
+                                    <a class="usuario__icon" href="historial-puesto.html">
+                                        <i class="fa-icon fa-brands fa-github"></i>
+                                        github.com/example
+                                    </a>
+                                </li>
+                                <i class="f-icons fa-solid fa-pen-to-square"></i>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historial Usuario -->
+                <div class="usuario__historial">
+                    <div class="usuarioHistorial__contenedor">
+                        <!-- Cabecera de la tarjeta de historial de usuario -->
+                        <div class="usuarioHistorial__card">
+                            <h1 class="usuarioHistorial__card-titulo">Historial</h1>
+                        </div>
+
+                        <!-- Cuerpo de la tarjeta de historial de usuario -->
+                        <div class="usuarioHistorial__card-cuerpo">
+                            <div class="usuarioHistorial__tabla-responsive">
+                                <!-- Tabla que muestra el historial del usuario -->
+                                <table class="usuarioHistorial__tabla">
+                                    <thead>
+                                        <tr class="usuarioHistorial__tabla--columna">
+                                            <th scope="col" class="tabla__columna--colorAzul">Entrada:</th>
+                                            <th scope="col" class="tabla__columna--colorAzul">Salida:</th>
+                                            <th scope="col" class="tabla__columna--colorBlanco">Total:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Filas de la tabla, cada una representa un registro en el historial -->
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color"> 
+                                                <div class="tabla__baseUsuario tabla__color--blanco"> Martes, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Martes, 12:45</div> 
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--blanco">Miércoles, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Miércoles, 12:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--blanco">Jueves, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Jueves, 12:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--blanco">Viernes, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Viernes, 12:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--blanco">Sábado, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Sábado, 12:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Filas de la tabla con datos -->
+                                        <tr>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--blanco">Domingo, 10:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--azul">Domingo, 12:45</div>
+                                            </td>
+                                            <td class="tabla__color">
+                                                <div class="tabla__baseUsuario tabla__color--verde">2 horas</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Pie de la tarjeta de historial de usuario -->
+                        <div class="usuarioHistorial__card-footer">
+                            <div class="usuarioHistorial__card-footer-contenedor">
+                                <!-- Contador de entradas y navegación de páginas -->
+                                <div class="usuarioHistorial__card-entradas">
+                                    Mostrar 6 entradas
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                <!-- Navegación de páginas -->
+                                <div class="usuarioHistorial__paginaNavegacion-contenedor">
+                                    <nav class="paginaNavegacion">
+                                        <ul class="Pagina__navegacion">
+                                            <!-- Botones de navegación de páginas -->
+                                            <li class="pagina__item disabled" href="#">
+                                                <a class="usuarioPagina__link">Previo</a>
+                                            </li>
+                                            <li class="pagina__item active">
+                                                <a class="usuarioPagina__link" href="#">1</a>
+                                            </li>
+                                            <li class="pagina__item">
+                                                <a class="usuarioPagina__link" href="#">2</a>
+                                            </li>
+                                            <li class="pagina__item">
+                                                <a class="usuarioPagina__link" href="#">Siguiente</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Usuario notificaciones  -->
+            <div class="usuario__notificaciones">
+                <div class="usuarioNotificacion__contenedor">
+                    <!-- Contenedor Principal -->
+                    <div class="contenedor-comentarios">
+                        <h1 class="comentario__titulo">Foro de Comentarios</h1>
+
+                        <ul id="comments-list" class="lista-comentarios">
+                            <li>
+                                <div class="nivel-principal-comentario">
+                                    <!-- Avatar -->
+                                    <div class="avatar-comentario"><img src="./assets/icon-perfil-hombre.png" alt=""></div>
+
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="caja-comentario">
+                                        <div class="encabezado-comentario">
+                                            <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                            <span>hace 20 minutos</span>
+                                            <i class="fi f-usuario fa fa-reply"></i>
+                                            <i class="f-usuario fa-solid fa-trash"></i>
+                                        </div>
+                                        <div class="contenido-comentario">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Respuestas de los comentarios -->
+                                <ul class="lista-comentarios lista-respuestas">
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-perfil-mujer.png" alt=""></div>
+
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="avatar-comentario"><img src="./assets/icon-hombre.svg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="caja-comentario">
+                                            <div class="encabezado-comentario">
+                                                <h6 class="nombre-comentario por-autor"><a href="index.html">Fabian Soto</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fi f-usuario fa fa-reply"></i>
+                                                <i class="f-usuario fa-solid fa-trash"></i>
+                                            </div>
+                                            <div class="contenido-comentario">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="nivel-principal-comentario">
+                                    <!-- Avatar -->
+                                    <div class="avatar-comentario"><img src="./assets/icon-mujer.svg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="caja-comentario">
+                                        <div class="encabezado-comentario">
+                                            <h6 class="nombre-comentario"><a href="usuario-home.html">Sarah Somers</a></h6>
+                                            <span>hace 10 minutos</span>
+                                            <i class="fi f-usuario fa fa-reply"></i>
+                                            <i class="f-usuario fa-solid fa-trash"></i>
+                                        </div>
+                                        <div class="contenido-comentario">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Formulario de comentarios -->
+                        <form id="formulario-comentario" class="formulario-comentario">
+                            <div class="grupo-formulario">
+                                <textarea id="comment-content" name="comment-content" placeholder="Deja un comentario" required></textarea>
+                            </div>
+                            <div class="grupo-formulario contenedor-subida-archivo">
+                                <input type="file" id="comment-file" name="comment-file" class="entrada-archivo">
+                                <button type="submit">Enviar comentario</button>
+                                <label for="comment-file" class="boton-subida-archivo">
+                                    <i class="fas fa-paperclip icono-subida-archivo"></i> Subir Archivo
+                                </label>
+                            </div>
+                        </form>     
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Derechos de autor y año -->
+        <div class="footer">
+            Copyright © 2023 Fabian Soto.
+        </div>
+    </footer>
+
+    <!-- Script para el menú hamburguesa -->
+    <script class="menuNav__hamburguesa">
+        document.getElementById('menu-nav').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.menuNav__menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

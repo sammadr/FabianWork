@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/avatar-.svg">
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Íconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9ff11db4e.js" crossorigin="anonymous"></script>
+    <!-- Título de la página -->
+    <title>Lista de empleados</title>
+</head>
+<body id="empleados-body">
+    <!-- Menu de navegación de la página -->
+    <header class="cabecera">
+        <div class="cabecera__contenedor">
+            <!-- Menú hamburguesa para dispositivos móviles -->
+            <div class="menu__contenedor">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu-boton__contenedor">
+                    <!-- Enlace del menú -->
+                    <a class="cabecera__menu-link menu-boton" href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Meet
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Menú de navegación principal -->
+            <nav class="cabecera__menu">
+                <ul class="cabecera__menu-lista">
+                    <!-- Opción del menú -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link menu--boton" href="https://meet.jit.si/salaDeReunionTeletrabajoIplacex" target="_blank">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Meet
+                        </a>
+                    </li>
+                    <!-- Otras opciones del menú -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="./index.html">
+                            <i class="fa-solid fa-house" style="color: var(--azulClaro)"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="./notificaciones-admi.html">
+                            <i class="fa-solid fa-comments" style="color: var(--azulClaro)"></i>
+                            Notificaciones
+                        </a>
+                    </li>
+                    <!-- Menú desplegable de usuario -->
+                    <li class="cabecera__menu-item">
+                        <a class="cabecera__menu-link" href="usuarioHome-admi.html">
+                            <img class="cabecera__img" src="./assets/icon-hombre.svg" alt="foto de perfil">
+                            Fabian Soto
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- Contenido del menú desplegable -->
+                        <div class="cabecera__submenu"> 
+                            <ul class="cabecera__menu-sublista">
+                                <li>
+                                    <a class="cabecera__menu-sublink" href="#">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        cerrar sesion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección que contiene la lista de empleados -->
+        <section class="empleado">
+            <!-- Contenedor principal de la lista de empleados -->
+            <div class="empleados__contenedor">
+                <!-- Lista de empleados -->
+                <div class="listaEmpleados">
+
+                    <!-- Primer empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/icon-mujer.svg" alt="Imagen de la empleada">
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Sarah Somers</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del primer empleado -->
+    
+                    <!-- Segundo empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/icon-hombre.svg" alt="">                
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Diego Torres</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del Segundo empleado -->
+    
+                    <!-- Tercer empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/avatar-femele.svg" alt="">
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Sarah Somers</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del Tercer empleado -->
+                    
+                    <!-- Cuarto empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/avatar-male.svg" alt="">
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Diego Torres</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del Cuarto empleado -->
+
+                    <!-- Quinto empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/avatar-femele.svg" alt="">
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Sarah Somers</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del Quinto empleado -->
+    
+                    <!-- Sexto empleado -->
+                    <div class="listaEmpleado__contenedor">
+                        <!-- Encabezado del empleado con una imagen -->
+                        <div class="listadoEmpleado__encabezado">
+                            <img class="listaEmpleado__encabezado-img" src="assets/icon-hombre.svg" alt="">                
+                        </div>
+                        <!-- Información del empleado -->
+                        <div class="listaEmpleado__info">
+                            <!-- Nombre del empleado -->
+                            <h4 class="listaEmpleado__titulo">Diego Torres</h4>
+                            <!-- Puesto del empleado -->
+                            <h5 class="listaEmpleado__puesto">Graphic Designer at Self Employed</h5>
+                            <br>
+                            <!-- Línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Contenedor de botones para el empleado -->
+                            <div class="listaEmpleado__botones-contenedor">
+                                <!-- Botón para modificar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-pen"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Modificar</h4>
+                                </button>
+                                <!-- Botón para eliminar -->
+                                <button class="listaEmpleado__boton">
+                                    <i class="icons-fa fa-solid fa-user-xmark"></i>
+                                    <h4 class="listadoEmpleado__boton--titulo">Eliminar</h4>
+                                </button>  
+                            </div>
+                            <br>
+                            <!-- Otra línea divisoria -->
+                            <hr class="linea">
+                            <br>
+                            <!-- Enlace para ver el perfil del empleado -->
+                            <a class="listaEmpleado__link" href="usuarioHome-admi.html">Ver Perfil</a>
+                        </div>
+                    </div>
+                    <!-- Fin del Sexto empleado -->
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Derechos de autor y año -->
+    <footer>
+        <div class="footer">
+            Copyright © 2023 Fabian Soto.
+        </div>
+    </footer>
+
+    <!-- Script para el menú hamburguesa -->
+    <script class="nav__hamburguesa">
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.cabecera__menu').classList.toggle('open');
+        });
+    </script>   
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* Bloque principal */
+.cabecera {
+    background: var(--blanco);
+    padding: 2rem 0;
+}
+
+/* Bloque del contenedor */
+.cabecera__contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Bloque del menú */
+/* Elemento de la lista del menú */
+.cabecera__menu-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento individual del menú */
+.cabecera__menu-item {
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__img {
+    width: 8%;
+    margin-right: 8px;
+}
+
+/* Enlace del menú */
+.cabecera__menu-link {
+    text-decoration: none;
+    color: var(--azulTenue);
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu--boton {
+    background: var(--azulMedio);
+    padding: 1rem;
+    border-radius: 90px;
+    color: var(--blanco);
+    white-space: nowrap;
+}
+
+.menu--boton:hover {
+    color: var(--azulTenue);
+    background-color: var(--azulClaro);
+}
+
+.menu-boton{
+    display: none;
+}
+
+.fa-regular {
+    color: var(--azulTenue);
+}
+
+/* Estilos para el menú desplegable */
+.cabecera__menu-item ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--blanco);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cabecera__menu-item:hover ul {
+    display: block;
+}
+
+.cabecera__menu-sublink {
+    display: block;
+    text-decoration: none;
+    color: var(--azulTenue);
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+i {
+    margin-right: 8px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    .cabecera__menu-lista {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .cabecera__menu-item {
+        margin-right: 0;
+    }
+
+    .cabecera__menu-link {
+        font-size: 18px; 
+    }
+
+    .menu__contenedor {
+        display: flex;
+        align-items: center; /* Alinea los elementos verticalmente */
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 24px;
+        margin-right: 100px; /* Agregado para separar .menu-icon de .menu--boton */
+    }
+
+    .bar {
+        background-color: var(--azulTenue);
+        height: 3px;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .menu--boton {
+        display: none;
+    }
+
+    .menu-boton {
+        display: block;
+        background: var(--azulMedio);
+        padding: 1.2rem;
+        border-radius: 90px;
+        color: var(--blanco);
+        width: 100%;
+        order: 1;
+        white-space: nowrap;
+    }
+
+    .menu-boton:hover {
+        color: var(--azulTenue);
+        background-color: var(--azulClaro);
+    }
+
+    .cabecera__menu {
+        display: none;
+        flex-direction: row; /* Cambiado a row para que .menu-icon y .menu--boton estén en la misma fila */
+        align-items: center; /* Añadido para centrar verticalmente los elementos */
+    }
+
+    .cabecera__menu.open {
+        display: flex;
+        flex-direction: column; /* Cambiado a column para que los elementos se muestren en columna */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 25vh;
+        background-color: var(--blanco);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .cabecera__menu-sublista { 
+        list-style: none;
+        padding: 0;
+    }
+
+    .cabecera__submenu { 
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--blanco);
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste en el selector para mostrar el menú desplegable */
+    .cabecera__menu-item:hover .cabecera__submenu { 
+        display: block;
+    }
+
+    .cabecera__menu-sublink {
+        display: block;
+        text-decoration: none;
+        color: var(--azulTenue);
+        padding: 8px 0; /* Ajustado el espaciado */
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}

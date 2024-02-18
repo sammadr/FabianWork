@@ -1,0 +1,225 @@
+/* Estilo para el cuerpo de la página principal */
+#index-body {
+    width: 100%;
+    height: 150vh; /* Altura del 150% del viewport height */
+    min-height: 100%;
+}
+
+/* Estilo para la sección principal de la página */
+.homePage {
+    margin: 2rem; /* Márgenes alrededor de la sección principal */
+}
+
+/* Estilo para el contenedor del perfil */
+.contenedor-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el perfil del usuario */
+.perfil {
+    width: 100%;
+}
+
+/* Estilo para el encabezado del perfil */
+.perfil__encabezado {
+    background-color: var(--azulMedio);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Estilo para la foto de perfil en el encabezado */
+.encabezado__foto {
+    width: 50%;
+    position: relative;
+    bottom: -50px;
+    left: 80px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+}
+
+/* Estilo para la información del perfil */
+.perfil__info {
+    background: var(--blanco);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    min-height: 100px;
+}
+
+/* Estilo para el título del perfil */
+.perfil__titulo {
+    color: var(--azulTenue);
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* Estilo para el correo del perfil */
+.perfil__correo {
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    color: var(--subText);
+    padding: 0 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Estilo para los enlaces de acciones del perfil */
+.perfil__enlaces {
+    padding: 1.8rem 1.5rem;
+}
+
+/* Estilo para los elementos de la lista de enlaces */
+.perfil__enlaces .perfil__item {
+    margin-bottom: 2rem;
+}
+
+/* Estilo para los iconos de los enlaces */
+.perfil__icon {
+    color: var(--azulTenue);
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* font-size: 13px; */
+}
+
+/* Estilo para los íconos de Font Awesome en los enlaces */
+.f-icon {
+    color: var(--azulClaro);
+    font-size: 1.5rem;
+}
+
+/* Línea de separación entre secciones */
+.linea {
+    color: var(--subText);
+}
+
+/* Estilo para el contenedor de botones */
+.botones__contenedor {
+    width: 100%;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+/* Estilo para el botón de perfil */
+.perfil__boton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--azulClaro);
+    color: var(--azulTenue);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo hover para el botón de perfil */
+.perfil__boton:hover {
+    background-color: var(--azulTenue);
+    color: var(--blanco);
+}
+
+/* Estilo para el fondo del botón */
+.boton--bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    border: 1px solid var(--azulTenue);
+}
+
+/* Estilo para el ícono dentro del botón */
+.icon-fa {
+    color: var(--azulTenue);
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* Estilo para el título dentro del botón */
+.boton--titulo {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+/* Estilo hover para el título dentro del botón */
+.boton--titulo:hover {
+    color: var(--blanco);
+}
+
+/* Estilos para pantallas medianas y grandes (más de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Ajustes para la sección principal en pantallas medianas y grandes */
+    .homePage {
+        margin: 4rem;
+    }
+
+    /* Ajustes para el contenedor del perfil en pantallas medianas y grandes */
+    .contenedor-perfil {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    /* Ajustes para el ancho del perfil en pantallas medianas y grandes */
+    .perfil {
+        width: 22vw;
+    }
+
+    /* Ajustes para la posición de la foto de perfil en pantallas medianas y grandes */
+    .encabezado__foto {
+        left: 25%;
+    }
+
+    /* Ajustes para el tamaño del título del perfil en pantallas medianas y grandes */
+    .perfil__titulo {
+        font-size: 18px;
+    }
+
+    /* Ajustes para el tamaño del correo del perfil en pantallas medianas y grandes */
+    .perfil__correo {
+        font-size: 10px;
+    }
+
+    /* Ajustes para el tamaño de los iconos de los enlaces en pantallas medianas y grandes */
+    .perfil__icon {
+        font-size: 13px;
+    }
+
+    /* Ajustes para el tamaño de los íconos de Font Awesome en los enlaces en pantallas medianas y grandes */
+    .f-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustes para el contenedor de botones en pantallas medianas y grandes */
+    .botones__contenedor {
+        display: flex;
+        flex-direction: row;
+        width: calc(50% - 20px);
+        margin: 20px 20px 0px 60px;
+    }
+
+    /* Ajustes para el tamaño del botón de perfil en pantallas medianas y grandes */
+    .perfil__boton {
+        width: 290px;
+        margin-right: 130px;
+        margin-bottom: 0;
+        /* Añade un margen superior negativo para subir el botón */
+        margin-top: -20px;
+    }
+}

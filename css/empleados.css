@@ -1,0 +1,226 @@
+/* Estilos para la sección de empleados */
+#empleados-body {
+    width: 100%;
+    min-height: auto;
+}
+
+/* Estilos para la clase empleado */
+.empleado {
+    margin: 4rem 2rem;
+}
+
+/* Estilos para el contenedor principal de empleados */
+.empleados__contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+}
+
+/* Estilos para la lista de empleados */
+.listaEmpleados {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilos para el contenedor de cada empleado en la lista */
+.listaEmpleado__contenedor {
+    width: 80vw;
+}
+
+/* Estilos para el encabezado de cada empleado */
+.listadoEmpleado__encabezado {
+    background-color: var(--azulMedio);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Estilos para la imagen del encabezado */
+.listaEmpleado__encabezado-img {
+    width: 50%;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+    left: 80px;
+    background-color: var(--blanco);
+}
+
+/* Estilos para la información del empleado */
+.listaEmpleado__info {
+    background: var(--blanco);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    min-height: 100px;
+}
+
+/* Estilos para el título del empleado */
+.listaEmpleado__titulo {
+    color: var(--azulTenue);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* Estilos para el puesto del empleado */
+.listaEmpleado__puesto {
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    color: var(--subText);
+    padding: 0 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Estilos para el contenedor de botones del empleado */
+.listaEmpleado__botones-contenedor {
+    width: calc(55% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 0 80px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Estilos para el botón del empleado */
+.listaEmpleado__boton {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 117px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+/* Efecto hover para el botón del empleado */
+.listaEmpleado__boton:hover {
+    background-color: var(--azulClaro);
+}
+
+/* Estilos para el icono dentro del botón */
+.icons-fa {
+    color: var(--azulTenue);
+    margin-top: 0;
+}
+
+/* Estilos para el título dentro del botón */
+.listadoEmpleado__boton--titulo {
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* Estilos para el enlace del perfil del empleado */
+.listaEmpleado__link {
+    color: var(--azulTenue);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Efecto hover para el enlace del perfil del empleado */
+.listaEmpleado__link:hover {
+    color: var(--azulClaro);
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas de escritorio (min-width: 769px) */
+@media screen and (min-width: 769px) {
+    /* Ajustes de margen para la clase empleado */
+    .empleado {
+        margin: 4rem 10rem;
+    }
+
+    /* Ajustes para la lista de empleados en pantallas más grandes */
+    .listaEmpleados {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* Ajustes para el contenedor de cada empleado en pantallas más grandes */
+    .listaEmpleado__contenedor {
+        width: 22vw;
+    }
+
+    /* Ajustes para el tamaño del título en pantallas más grandes */
+    .listaEmpleado__titulo {
+        font-size: 18px;
+    }
+
+    /* Ajustes para el tamaño del puesto en pantallas más grandes */
+    .listaEmpleado__puesto {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    /* Ajustes para el contenedor de botones en pantallas más grandes */
+    .listaEmpleado__botones-contenedor {
+        width: calc(50% - 15px);
+    }
+
+    /* Ajustes para el espacio entre botones en pantallas más grandes */
+    .listaEmpleado__boton {
+        margin-right: 10px;
+    }
+
+    /* Ajustes para el tamaño del título dentro del botón en pantallas más grandes */
+    .listadoEmpleado__boton--titulo {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

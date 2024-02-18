@@ -1,0 +1,93 @@
+/* Estilo para el contenedor del banner */
+.contenedor-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px; /* Márgenes en la parte inferior del contenedor */
+}
+
+/* Estilo para la sección del banner en la página principal */
+.homePage__banner {
+    background-color: var(--blanco);
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 650px; 
+    height: 300px;
+    padding: 1rem;
+}
+
+/* Estilo para la imagen dentro del banner */
+.homePage__banner-img {
+    width: 50%; 
+    height: auto; 
+    margin: 20px 0; 
+}
+
+/* Estilo para el título dentro del banner */
+.homePage__banner-titulo {
+    text-transform: uppercase; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 24px; 
+    color: var(--azulTenue); 
+    padding-bottom: 10px; 
+}
+
+/* Estilo para el subtítulo dentro del banner */
+.homePage__banner-subtitulo {
+    text-align: center; 
+    font-size: 16px;
+    color: var(--azulMedio); 
+}
+
+/* Estilos para pantallas medianas y grandes (más de 768px) */
+@media only screen and (min-width: 768px) {
+    /* Ajustes para el margen inferior del contenedor del banner */
+    .contenedor-banner {
+        margin-bottom: 10px;
+    }
+
+    /* Ajustes para la posición y tamaño del banner en pantallas medianas y grandes */
+    .homePage__banner {
+        position: absolute;
+        top: 85%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        width: 688px;
+        height: 400px; 
+    }
+
+    /* Ajustes para el tamaño de la imagen en el banner en pantallas medianas y grandes */
+    .homePage__banner-img {
+        width: 30%; 
+    }
+
+    /* Ajustes para el tamaño del título en el banner en pantallas medianas y grandes */
+    .homePage__banner-titulo {
+        font-size: 32px; 
+    }
+
+    /* Ajustes para el tamaño del subtítulo en el banner en pantallas medianas y grandes */
+    .homePage__banner-subtitulo {
+        font-size: 20px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

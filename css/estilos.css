@@ -1,0 +1,56 @@
+/* Importación de fuentes desde Google Fonts y otros archivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800&display=swap');
+
+@import url(../css/login.css);
+@import url(../css/nav-usuario.css);
+@import url(../css/nav-admi.css); 
+@import url(../css/home-usuario.css); 
+@import url(../css/home-admi.css); 
+@import url(../css/banner.css);
+@import url(../css/modal-registro.css);
+@import url(../css/modal-puesto.css);
+@import url(../css/modal-modificarPuesto.css);
+@import url(../css/empleados.css);
+@import url(../css/historialPuesto.css);
+@import url(../css/listaPuestos.css);
+@import url(../css/historialEmpleados.css);
+@import url(../css/historialUsuario.css);
+@import url(../css/notificacion-admin.css);
+@import url(../css/notificaciones-usuario.css);
+@import url(../css/footer.css); 
+
+
+/* Definición de variables globales */
+:root {
+    --text: #333;
+    --input: #eee;
+    --items: #ddd;
+    --blanco: #fff;
+    --rojo: #FB503B;
+    --verde: #4DBA87;
+    --texto: #595959;
+    --subText: #a8a6a6;
+    --azulClaro: #57D6F2;
+    --azulMedio: #0583F2;
+    --azulTenue: #020659;
+    --azulMarino: #010326;
+    --azulOscuro: #010440;
+    --rojoHover: #fa9f9377;
+    --verdeHover: #e4fbf098;
+    --azulClaroBase: #d7f5ff;
+    --azulClaroHover: #caf5ff;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% del alto de la ventana visible */
+    background: var(--azulMarino);
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    flex: 1; /* Esto hace que el contenido principal ocupe todo el espacio disponible */
+}
+
